@@ -1,7 +1,6 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «Cat Energy»
 
-* Студент: [{{userName}}]({{userProfile}}).
-* Наставник: `Неизвестно`.
+* Студент: [Роман Ченцов](https://htmlacademy.ru/profile/id1192285).
 
 ---
 
