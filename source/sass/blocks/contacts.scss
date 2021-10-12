@@ -1,3 +1,14 @@
 .contacts {
-  
+  background-color: $basic_grey;
+  text-align: center;
+}
+
+.contacts__logo {
+  border-bottom: 1px solid $border;
+}
+
+.contacts__developers a {
+  font-family: Arial, sans-serif;
+  color: $special_dark-grey;
+  font-size: 16px;
 }

@@ -1,3 +1,12 @@
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -12,13 +21,28 @@
 }
 
 .button {
-
+  display: inline-block;
+  background-color: $basic_green;
+  color: $basic_white;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  width: 100%;
+  padding: 11px 0;
+  &:hover,
+  &:focus {
+    background-color: $basic_green-2;
+  }
+  &:active {
+    color: rgba($color: $basic_white, $alpha: 0.3);
+  }
 }
 
 .title {
-
-}
-
-.range-toggle {
-  
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
 }

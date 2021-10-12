@@ -1,3 +1,18 @@
 .site-list {
-  
+  @include clear-list;
+  text-align: center;
+}
+
+.site-list__item {
+  border-bottom: 1px solid $border-2;
+  border-top: 1px solid $border-2;
+}
+
+.site-list__item a {
+  display: inline-block;
+  color: $basic_black;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
 }

@@ -1,3 +1,7 @@
 .additional-products {
-  
+
+}
+
+.additional-products__list {
+  @include clear-list;
 }

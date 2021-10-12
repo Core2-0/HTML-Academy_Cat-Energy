@@ -2,11 +2,14 @@
 @import "fonts.scss";
 
 // Global
+@import "colors.scss";
 @import "global.scss";
+@import "mixins.scss";
 
 // Blocks
 // Blocks-Global
 @import "blocks/page.scss";
+@import "blocks/slider.scss";
 
 // Page-Header
 @import "blocks/page-header.scss";
@@ -38,4 +41,4 @@
 @import "blocks/page-footer.scss";
 @import "blocks/location.scss";
 @import "blocks/contacts.scss";
-@import "blocks/social-list.scss";
+@import "blocks/socials-list.scss";
