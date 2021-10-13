@@ -1,0 +1,17 @@
+.gift {
+  height: 289px;
+  background-image: url("../../img/gift/bg_gift.jpg");
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.gift__slogan {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic_white;
+  padding: 0;
+  margin: 0;
+}

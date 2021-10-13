@@ -5,6 +5,7 @@
 @import "colors.scss";
 @import "global.scss";
 @import "mixins.scss";
+@import "container.scss";
 
 // Blocks
 // Blocks-Global
@@ -28,6 +29,7 @@
 @import "blocks/production.scss";
 @import "blocks/card.scss";
 @import "blocks/additional-products.scss";
+@import "blocks/gift.scss";
 
 // form.html
 @import "blocks/questionary.scss";

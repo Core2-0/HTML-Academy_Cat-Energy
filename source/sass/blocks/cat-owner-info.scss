@@ -1,3 +1,16 @@
 .cat-owner-info {
-  
+  border: none;
+  border-bottom: 1px solid $border;
+}
+
+.cat-owner-info__list {
+  @include clear-list;
+}
+
+.cat-owner-info__item label,
+.cat-owner-info__item input {
+  font-family: inherit;
+  color: $special_dark-grey;
+  font-size: 16px;
+  text-transform: uppercase;
 }

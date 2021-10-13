@@ -1,3 +1,16 @@
 .cat-info {
-  
+  border: none;
+  border-bottom: 1px solid $border;
+}
+
+.cat-info__list {
+  @include clear-list;
+}
+
+.cat-info__item label,
+.cat-info__item input {
+  font-family: inherit;
+  font-size: 16px;
+  color: $special_dark-grey;
+  text-transform: uppercase;
 }
