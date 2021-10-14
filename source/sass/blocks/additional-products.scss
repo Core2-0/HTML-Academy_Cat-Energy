@@ -1,0 +1,13 @@
+.additional-products {
+  margin: 0 0 35px 0;
+}
+
+.additional-products__list {
+  @include clear-list;
+  margin: 0 0 39px 0;
+}
+
+.additional-products__item {
+  border-top: 1px solid $special_grey-2;
+  border-bottom: 1px solid $special_grey-2;
+}

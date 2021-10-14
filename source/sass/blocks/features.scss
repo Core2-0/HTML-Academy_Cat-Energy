@@ -1,0 +1,27 @@
+@for $i from 1 through 4 {
+  .features__item--step-#{$i}::before {
+    content: "";
+    display: inline-block;
+    background-image: url("../../img/features/logo-step-#{$i}.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin: 0 20px 0 0;
+  }
+}
+
+.features {
+  padding: 0 0 42px 0;
+}
+
+.features__item {
+  margin: 0 0 20px 0;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.features__list {
+  @include clear-list;
+}

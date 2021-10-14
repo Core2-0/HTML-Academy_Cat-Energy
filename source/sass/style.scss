@@ -1,0 +1,46 @@
+// Fonts
+@import "fonts.scss";
+
+// Global
+@import "colors.scss";
+@import "global.scss";
+@import "mixins.scss";
+@import "container.scss";
+
+// Blocks
+// Blocks-Global
+@import "blocks/page.scss";
+@import "blocks/slider.scss";
+
+// Page-Header
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+
+// Page-Main
+// index.html
+@import "blocks/page-main.scss";
+@import "blocks/preview.scss";
+@import "blocks/programm-section.scss";
+@import "blocks/features.scss";
+@import "blocks/stats.scss";
+
+// catalog.html
+@import "blocks/production.scss";
+@import "blocks/card.scss";
+@import "blocks/additional-products.scss";
+@import "blocks/gift.scss";
+
+// form.html
+@import "blocks/questionary.scss";
+@import "blocks/cat-info.scss";
+@import "blocks/filter-programm.scss";
+@import "blocks/cat-owner-info.scss";
+@import "blocks/comment.scss";
+@import "blocks/additionally.scss";
+
+// Page-Footer
+@import "blocks/page-footer.scss";
+@import "blocks/location.scss";
+@import "blocks/contacts.scss";
+@import "blocks/socials-list.scss";

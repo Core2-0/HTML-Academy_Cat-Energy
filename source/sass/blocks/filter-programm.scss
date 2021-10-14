@@ -1,0 +1,16 @@
+.filter-programm {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid $border;
+}
+
+.filter-programm__list {
+  @include clear-list;
+}
+
+.filter-programm__item label {
+  color: $special_dark-grey-2;
+  font-size: 16px;
+  text-transform: uppercase;
+}

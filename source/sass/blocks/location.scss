@@ -1,0 +1,18 @@
+.location {
+  width: 100%;
+  height: 362px;
+  background-image: url("../../img/map-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.location__slogan {
+  color: $special_black;
+  text-transform: uppercase;
+}
+
+.location__adress {
+  font-size: 14px;
+  line-height: 20px;
+  color: $special_dark-grey;
+}
