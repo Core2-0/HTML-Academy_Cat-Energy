@@ -1,24 +1,80 @@
 .preview {
-  background-image: url("../../img/promo/promo-bg-mobile.jpg");
-  background-size: contain;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  // background-color: rgba($basic_green, $alpha: 0.85);
-  padding: 27px 0 22px 0;
+  color: $basic_white;
+  text-align: center;
+  margin: 0 0 22px 0;
+}
+
+.preview__wrapper {
+  height: 480px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .preview__title {
   line-height: 36px;
-  color: $basic_white;
-  text-align: center;
   margin: 0 0 25px 0;
 }
 
 .preview__subtitle {
-  text-align: center;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: $basic_white;
-  margin: 0 0 29px 0;
+  margin: 0;
+  &::after {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 270px;
+    background-image: url("../../img/promo/promo-product.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 29px 0 0 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .preview {
+    color: $basic_black;
+    text-align: left;
+  }
+
+  .preview__wrapper {
+    width: 575px;
+    height: 810px;
+  }
+
+  // Заменить глобальный класс если требуется
+  .preview__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    margin: 0 0 41px 0;
+  }
+
+  .preview__subtitle {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 49px 0;
+    &::after {
+      position: absolute;
+      width: 709px;
+      height: 609px;
+      top: 10px;
+      left: -100px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .preview__wrapper {
+    width: 1220px;
+    height: 696px;
+  }
+
+  .preview__subtitle::after {
+    top: -150px;
+    left: 415px;
+  }
 }

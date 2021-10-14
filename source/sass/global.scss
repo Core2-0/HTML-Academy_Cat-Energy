@@ -73,3 +73,10 @@ img {
     margin: 0 0 36px 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: auto;
+    padding: 11px 26px;
+  }
+}
