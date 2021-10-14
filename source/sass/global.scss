@@ -1,3 +1,7 @@
+// Variables
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
 a {
   text-decoration: none;
 }
@@ -32,20 +36,25 @@ img {
   border: none;
   width: 100%;
   padding: 11px 0;
+
   &:hover,
   &:focus {
     background-color: $basic_green-2;
   }
+
   &:active {
     color: rgba($color: $basic_white, $alpha: 0.3);
   }
+
   &--to-all {
     color: $special_dark-grey;
     background-color: $basic_grey;
+
     &:hover,
     &:focus {
       background-color: $special_grey;
     }
+
     &:active {
       color: rgba($color: $special_dark-grey, $alpha: 0.3);
     }
@@ -57,6 +66,7 @@ img {
   line-height: 40px;
   font-weight: 400;
   margin: 0 0 38px 0;
+
   &--legend {
     font-size: 24px;
     line-height: 24px;

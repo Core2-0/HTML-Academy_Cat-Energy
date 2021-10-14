@@ -1,7 +1,18 @@
-.page-header {
-
+.page-header__logo {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
-.page-header__logo {
-  cursor: pointer;
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 709px;
+    margin: 0 auto;
+  }
+
+  .page-header__toggle-menu {
+    display: none;
+  }
 }

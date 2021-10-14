@@ -2,35 +2,38 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Cat Energy</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="container">
-        <a class="page-header__logo">
-          <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип магазина «Cat Energy»">
-        </a>
-        <a class="page-header__logo">
-          <img src="img/logo-name.svg" width="100" height="18" alt="">
-        </a>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
+      <div class="page-header__wrapper">
+        <nav class="main-nav">
+          <div class="page-header__logo">
+          <a>
+            <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип магазина «Cat Energy»">
+          </a>
+          <a>
+            <img src="img/logo-name.svg" width="100" height="18" alt="">
+          </a>
         </div>
-      </nav>
+        <button class="page-header__toggle-menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a>Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Магазин «Cat Energy» - Функциональное питание для котов</h1>
