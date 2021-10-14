@@ -1,5 +1,17 @@
 .stats {
   background-color: $background-2;
+  padding: 27px 0 0 0;
+}
+
+.stats__lead {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.stats__text {
+  font-family: Arial, sans-serif;
+  color: $special_dark-grey;
 }
 
 .stats__list dt {
@@ -12,10 +24,4 @@
   font-size: 12px;
   line-height: 12px;
   color: $special_dark-grey;
-}
-
-.stats__lead {
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
 }

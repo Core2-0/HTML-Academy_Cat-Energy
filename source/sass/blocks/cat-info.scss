@@ -1,10 +1,16 @@
 .cat-info {
   border: none;
+  margin: 0;
+  padding: 0;
   border-bottom: 1px solid $border;
 }
 
 .cat-info__list {
   @include clear-list;
+}
+
+.cat-info__item {
+  margin: 0 0 10px 0;
 }
 
 .cat-info__item label,
