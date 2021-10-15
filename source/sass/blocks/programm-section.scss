@@ -1,7 +1,7 @@
-.programm-section {
+.programm-section__wrapper {
   background-color: $background-2;
-  padding: 21px 0 18px 0;
-  margin: 0 0 20px 0;
+  padding: 21px 20px 18px;
+  margin: 0 20px 20px 20px;
 }
 
 .programm-section__title {
@@ -11,30 +11,10 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 0 0 22px 0;
-  &--sliming::before {
-    content: "";
-    display: inline-block;
-    background-image: url("../../img/programm-section/logo-sliming.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 53px;
-    margin: 0 19px 0 0;
-  }
-  &--set-of-mass::before {
-    content: "";
-    display: inline-block;
-    background-image: url("../../img/programm-section/logo-set-of-mass.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 67px;
-    height: 50px;
-    margin: 0 11px 0 0;
-  }
 }
 
 .programm-section__description {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   color: $special_dark-grey;
   border-bottom: 1px solid $border;
   margin: 0 0 15px 0;
@@ -46,4 +26,30 @@
   line-height: 16px;
   color: $basic_black;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .programm-section__wrapper {
+    padding: 53px;
+    margin: 0 30px 20px 30px;
+  }
+
+  .programm-section__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .programm-section__description {
+    border: none;
+    margin: 0 0 48px 0;
+  }
+
+  .programm-section__to-catalog {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  
 }

@@ -76,7 +76,9 @@ img {
 
 @media (min-width: $tablet-width) {
   .button {
+    font-size: 20px;
+    line-height: 20px;
     width: auto;
-    padding: 11px 26px;
+    padding: 17px 26px;
   }
 }

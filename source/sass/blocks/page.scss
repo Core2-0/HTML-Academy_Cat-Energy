@@ -4,6 +4,10 @@
 }
 
 .page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
   margin: 0;
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
@@ -11,4 +15,11 @@
   line-height: 18px;
   font-weight: 400;
   color: $basic_black;
+}
+
+@media (min-width: $tablet-width) {
+  .page__body {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
