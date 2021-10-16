@@ -1,11 +1,23 @@
+.programm-section__list {
+  @include clear-list;
+}
+
 .programm-section__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.programm-section__item {
   background-color: $background-2;
   padding: 21px 20px 18px;
-  margin: 0 20px 20px 20px;
+  margin: 0 0 20px 0;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .programm-section__title {
-  height: 100%;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -30,8 +42,8 @@
 
 @media (min-width: $tablet-width) {
   .programm-section__wrapper {
-    padding: 53px;
-    margin: 0 30px 20px 30px;
+    width: 709px;
+    margin: 0 auto;
   }
 
   .programm-section__title {
@@ -51,5 +63,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  
+  .programm-section__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
+
+  .programm-section__wrapper {
+    width: 1220px;
+  }
 }

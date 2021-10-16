@@ -5,7 +5,7 @@
     background-image: url("../../img/features/logo-step-#{$i}.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 60px;
+    min-width: 60px;
     height: 60px;
     margin: 0 20px 0 0;
   }
@@ -15,7 +15,14 @@
   padding: 0 0 42px 0;
 }
 
+.features__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .features__item {
+  display: flex;
+  align-items: center;
   margin: 0 0 20px 0;
   &:last-child {
     margin: 0;

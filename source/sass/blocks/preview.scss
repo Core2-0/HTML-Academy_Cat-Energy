@@ -1,45 +1,27 @@
 .preview {
   color: $basic_white;
-  text-align: center;
   margin: 0 0 22px 0;
-  position: relative;
-}
-
-.preview__wrapper {
-  height: 480px;
-  width: 280px;
-  margin: 0 auto;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: -27px;
-    right: -20px;
     height: 300px;
-    width: 320px;
+    width: 100%;
     background-image:
       linear-gradient(rgba($color: $basic_green, $alpha: 0.85), rgba($color: $basic_green, $alpha: 0.85)),
       url("../../img/promo/promo-bg-mobile.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
   }
 }
 
-.preview__inner {
-  position: relative;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 280px;
-    height: 270px;
-    background-image: url("../../img/promo/promo-product.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: 29px 0 0 0;
-  }
+.preview__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 27px 0 0 0;
 }
 
 .preview__title {
@@ -48,36 +30,26 @@
 }
 
 .preview__subtitle {
+  position: relative;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 29px 0;
 }
 
 @media (min-width: $tablet-width) {
   .preview {
     color: $basic_black;
-    text-align: left;
-  }
-
-  .preview__wrapper {
-    width: 575px;
-    height: 810px;
+    margin: 0;
 
     &::before {
       display: none;
     }
   }
 
-  .preview__inner {
-    &::after {
-      position: absolute;
-      top: 100%;
-      right: -15%;
-      width: 709px;
-      height: 609px;
-      z-index: -1;
-    }
+  .preview__wrapper {
+    width: 575px;
+    text-align: left;
   }
 
   // Заменить глобальный класс если требуется
@@ -96,31 +68,25 @@
 }
 
 @media (min-width: $desktop-width) {
-  .preview__wrapper {
-    padding: 64px 0 0 160px;
-    width: 1220px;
-    height: 447px;
-    position: relative;
+  .preview {
+    margin: 0 0 80px 0;
 
     &::before {
       display: block;
       top: -159px;
       right: -32px;
-      width: 720px;
-      height: 692px;
+      width: 50%;
+      min-height: 692px;
       background-image:
         linear-gradient(rgba($color: $basic_green, $alpha: 0.85), rgba($color: $basic_green, $alpha: 0.85)),
         url("../../img/promo/promo-background.jpg");
     }
   }
 
-  .preview__inner {
-    max-width: 575px;
-
-    &::after {
-      top: -62%;
-      left: 64%;
-      height: 499px;
-    }
+  .preview__wrapper {
+    padding: 0;
+    width: 1220px;
+    height: 470px;
+    position: relative;
   }
 }
