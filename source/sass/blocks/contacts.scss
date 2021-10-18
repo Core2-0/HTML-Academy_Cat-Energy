@@ -5,7 +5,14 @@
 
 .contacts__logo {
   display: block;
-  border-bottom: 1px solid $border;
+  padding: 36px 0 26px;
+}
+
+.contacts__developers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
 }
 
 .contacts__developers a {

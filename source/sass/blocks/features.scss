@@ -2,6 +2,7 @@
   .features__item--step-#{$i}::before {
     content: "";
     display: inline-block;
+    background-color: $basic_green;
     background-image: url("../../img/features/logo-step-#{$i}.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -69,5 +70,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  
+
+
 }

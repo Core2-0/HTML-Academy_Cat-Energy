@@ -76,6 +76,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .programm-section {
+    padding: 0;
+  }
+
   .programm-section__item {
     width: 708px;
     padding: 75px 50px 62px 53px;

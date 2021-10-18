@@ -3,12 +3,13 @@
   flex-wrap: wrap;
   justify-content: center;
   @include clear-list;
+  border-top: 1px solid $border;
   border-bottom: 1px solid $border;
+  padding: 24px 0 15px;
 }
 
 .socials-list__item {
   margin-right: 33px;
-  
   &:last-child {
     margin-right: 0;
   }
