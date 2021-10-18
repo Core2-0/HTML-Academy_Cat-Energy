@@ -1,6 +1,20 @@
 .stats {
   background-color: $background-2;
-  padding: 27px 0 0 0;
+}
+
+.stats__wrapper {
+  padding: 0 20px 34px;
+}
+
+.stats__title {
+  margin: 0 0 23px;
+  padding-top: 17px;
+}
+
+.stats__text {
+  font-family: Arial, sans-serif;
+  color: $special_dark-grey;
+  margin: 0 0 25px;
 }
 
 .stats__lead {
@@ -9,19 +23,101 @@
   text-align: center;
 }
 
-.stats__text {
-  font-family: Arial, sans-serif;
-  color: $special_dark-grey;
+.stats__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
 }
 
-.stats__list dt {
+.stats__number {
+  grid-row: 1 / 2;
+  width: 122px;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
+  padding: 13px 0 18px;
+  border: 1px solid $special_grey-2;
+  border-radius: 5px;
+  position: relative;
 }
 
-.stats__list dd {
+.stats__description {
+  display: block;
+  // position: absolute;
+  // left: 50%;
+  // bottom: 0;
+  // transform: translateX(50%);
   margin: 0;
+  padding: 0 9px;
   font-size: 12px;
   line-height: 12px;
   color: $special_dark-grey;
+  text-transform: uppercase;
+  text-align: center;
+  width: 77px;
+}
+
+@media (min-width: $tablet-width) {
+  .stats {
+    border-top: 1px solid $border-2;
+    background-color: $basic_white;
+    background-image: linear-gradient($basic_white 0%, $basic_white 57%, $basic_grey 57%, $basic_grey 100%);
+  }
+
+  .stats__wrapper {
+    padding: 0 30px 70px;
+  }
+
+  .stats__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 42px;
+    margin-bottom: 65px;
+  }
+
+  .stats__text {
+    width: 700px;
+  }
+
+  .stats__result-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .stats__list {
+    grid-template-columns: repeat(2, min-content);
+    column-gap: 42px;
+  }
+
+  .stats__lead {
+    margin: 0 0 0 auto;
+    font-size: 20px;
+    line-height: 29px;
+    width: 174px;
+    text-align: right;
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats {
+    border: none;
+    background-image: linear-gradient($basic_white 0%, $basic_white 29%, $basic_grey 29%, $basic_grey 100%);
+    padding-bottom: 64px;
+  }
+
+  .stats__wrapper {
+    display: flex;
+  }
+
+  .stats__result-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stats__lead {
+    text-align: left;
+    margin: 0;
+    width: auto;
+  }
 }

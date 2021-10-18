@@ -1,5 +1,14 @@
-.slider {
+.slider__image {
+  display: none;
 
+  &--show {
+    display: block;
+  }
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: space-between;
 }
 
 .slider__after,

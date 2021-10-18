@@ -4,6 +4,7 @@
 }
 
 .contacts__logo {
+  display: block;
   border-bottom: 1px solid $border;
 }
 
@@ -11,4 +12,11 @@
   font-family: Arial, sans-serif;
   color: $special_dark-grey;
   font-size: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+  }
 }

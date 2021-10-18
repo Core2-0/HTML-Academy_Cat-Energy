@@ -1,4 +1,15 @@
 .socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   @include clear-list;
   border-bottom: 1px solid $border;
+}
+
+.socials-list__item {
+  margin-right: 33px;
+  
+  &:last-child {
+    margin-right: 0;
+  }
 }
