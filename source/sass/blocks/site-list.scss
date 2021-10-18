@@ -3,46 +3,56 @@
   text-align: center;
 }
 
-.site-list__item {
-  padding: 22px 0;
-  border-bottom: 1px solid $border-2;
-}
-
-.site-list__item a {
-  display: inline-block;
+.site-list__link {
+  display: block;
   color: $basic_black;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  padding: 22px 0;
+  width: 100%;
+  border-top: 1px solid $border-2;
 }
 
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 440px;
   }
 
-  .site-list__item {
-    padding: 0;
-    border: none;
-  }
-
-  .site-list__item a {
+  .site-list__link {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 25px;
     font-weight: 400;
+    border: none;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 13px;
+        height: 2px;
+        background-color: $basic_green;
+      }
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 478px;
+    width: 480px;
   }
 
-  .site-list__item a {
+  .site-list__link {
     font-size: 20px;
-    line-height: 29px;
+    line-height: 25px;
   }
 }

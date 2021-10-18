@@ -1,3 +1,26 @@
 .main-nav {
-  
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__toggle-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+  }
+
+  .main-nav__toggle-menu {
+    display: none;
+  }
 }
