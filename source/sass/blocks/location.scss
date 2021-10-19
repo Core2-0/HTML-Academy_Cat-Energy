@@ -35,21 +35,45 @@
 }
 
 @media (min-width: $tablet-width) {
+  .location__wrapper {
+    padding: 66px 72px 51px;
+  }
+
+  .location__slogan {
+    width: 175px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .location__adress {
+    display: flex;
+    flex-direction: column;
+    width: 168px;
+    min-height: 84px;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  .location__adress span {
+    margin-top: 18px;
+  }
+
   .location__map {
     background-image: url("../../img/map-tablet.png");
   }
 }
 
 @media (min-width: $desktop-width) {
-  .location {
-    position: relative;
-  }
-
   .location__wrapper {
     position: absolute;
-    background-color: $basic_white;
+    left: calc(50% - var(--content-width-desktop) / 2);
+    top: 95px;
     width: 570px;
-    z-index: 2;
+    z-index: 20;
+  }
+
+  .location__adress {
+    text-align: left;
   }
 
   .location__map {

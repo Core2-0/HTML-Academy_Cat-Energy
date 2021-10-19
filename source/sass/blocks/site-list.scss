@@ -45,11 +45,14 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 480px;
+    width: 600px;
+  }
+
+  .site-list__item {
+    margin-left: 34px;
   }
 
   .site-list__link {
     font-size: 20px;
-    line-height: 25px;
   }
 }

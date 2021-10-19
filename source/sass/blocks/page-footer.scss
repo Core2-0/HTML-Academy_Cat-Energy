@@ -1,5 +1,6 @@
 .page-footer {
   position: relative;
+  background-color: $basic_grey;
 }
 
 .page-footer__contacts {
@@ -9,4 +10,17 @@
   padding-top: 39px;
   padding-bottom: 23px;
   background-color: $basic_grey;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__contacts {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 42px;
+    padding-bottom: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  
 }

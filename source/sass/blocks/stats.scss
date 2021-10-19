@@ -46,50 +46,46 @@
 
 @media (min-width: $tablet-width) {
   .stats {
-    border-top: 1px solid $border-2;
-    background-color: $basic_white;
-    background-image: linear-gradient($basic_white 0%, $basic_white 57%, $basic_grey 57%, $basic_grey 100%);
+    padding-top: 44px;
+    background-color: transparent;
   }
 
-  .stats__wrapper {
-    padding: 0 30px 70px;
+  .stats__text-wrapper {
+    padding-bottom: 52px;
   }
 
   .stats__title {
+    margin-bottom: 64px;
     font-size: 60px;
     line-height: 60px;
-    padding-top: 42px;
-    margin-bottom: 65px;
   }
 
   .stats__text {
-    width: 700px;
+    max-width: 680px;
   }
 
   .stats__result-wrapper {
     display: flex;
-    align-items: center;
-  }
-
-  .stats__list {
-    grid-template-columns: repeat(2, min-content);
-    column-gap: 42px;
+    justify-content: space-between;
+    padding-top: 39px;
   }
 
   .stats__lead {
-    margin: 0 0 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    max-width: 180px;
     font-size: 20px;
-    line-height: 29px;
-    width: 174px;
+    line-height: 28px;
     text-align: right;
-    padding-top: 8px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .stats {
-    border: none;
-    background-image: linear-gradient($basic_white 0%, $basic_white 29%, $basic_grey 29%, $basic_grey 100%);
+    padding-top: 0;
+    background-image:
+      linear-gradient(180deg, $basic_white 190px, transparent 190px),
+      linear-gradient(90deg, $basic_grey 50%, $background-2 50%);
     padding-bottom: 64px;
   }
 
@@ -97,14 +93,29 @@
     display: flex;
   }
 
+  .stats__text-wrapper {
+    width: 610px;
+  }
+
+  .stats__title {
+    margin-top: 56px;
+    margin-bottom: 146px;
+  }
+
+  .stats__text {
+    min-width: 436px;
+  }
+
   .stats__result-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
+    display: block;
+    padding-top: 54px;
+    width: 366px;
   }
 
   .stats__lead {
+    display: flex;
+    justify-content: space-between;
+    min-width: 328px;
     text-align: left;
-    margin: 0;
-    width: auto;
   }
 }

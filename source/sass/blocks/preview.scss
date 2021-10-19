@@ -100,3 +100,41 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .preview {
+    padding-bottom: 55px;
+  }
+
+  .preview__content {
+    grid-template-columns: 50% 50%;
+    margin-left: 80px;
+    margin-right: 80px;
+    width: 1060px;
+  }
+
+  .preview__title {
+    margin-top: 80px;
+    margin-left: 0;
+  }
+
+  .preview__subtitle {
+    margin-left: 0;
+  }
+
+  .preview__picture {
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+  }
+
+  .preview__image {
+    transform: translateX(-29%);
+    width: 552px;
+    height: 499px;
+  }
+
+  .preview__link {
+    margin-top: 33px;
+    margin-left: 0;
+  }
+}

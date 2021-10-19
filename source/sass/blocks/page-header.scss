@@ -1,21 +1,10 @@
-.page-header__logo {
-  width: 235px;
-  height: 66px;
-  display: block;
-  margin: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .page-header__logo {
-    width: 190px;
-    padding: 3px 0 0;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .page-header {
-    padding: 0 40px;
-    margin-top: 52px;
-    margin-bottom: 65px;
+    background-image:
+      linear-gradient(90deg, $basic_white 50%, rgba($color: $basic_green, $alpha: 0.85) 50%),
+      url("../../img/promo/promo-background.jpg");
+    background-size: 100%, 720px 696px;
+    background-position: center, calc(50% + 360px) center;
+    background-repeat: no-repeat;
   }
 }

@@ -39,3 +39,49 @@
   color: $basic_black;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .result-list {
+    width: 366px;
+  }
+
+  .result-list__item {
+    padding: 15px 10px 18px;
+    background-color: $basic_white;
+  }
+
+  .result-list__term {
+    transform: translateY(50%);
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .result-list__term span {
+    max-width: 94%;
+    background-color: $basic_white;
+  }
+
+  .result-list__description {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result-list {
+    margin-bottom: 56px;
+  }
+
+  .result-list__item {
+    background-color: $basic_grey;
+  }
+
+  .result-list__term span {
+    background-color: $basic_grey;
+  }
+
+  .result-list__description {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}

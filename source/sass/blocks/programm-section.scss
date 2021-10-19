@@ -106,3 +106,41 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programm-section__list {
+    grid-template-columns: repeat(2, 570px);
+    column-gap: 80px;
+    padding-top: 80px;
+    padding-bottom: 35px;
+  }
+
+  .programm-section__item {
+    padding: 47px 52px 62px;
+    min-height: 263px;
+  }
+
+  .programm-section__content {
+    margin-bottom: 0;
+    padding-top: 22px;
+
+    &::before {
+      top: 0;
+      left: 0;
+      right: auto;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .programm-section__title {
+    margin-bottom: 75px;
+    margin-left: 162px;
+  }
+
+  .programm-section__description {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    max-width: none;
+  }
+}

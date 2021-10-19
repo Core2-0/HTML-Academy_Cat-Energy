@@ -40,3 +40,34 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .slider {
+    width: 708px;
+    min-height: 630px;
+  }
+
+  .slider__image-wrapper {
+    grid-template-columns: 708px;
+  }
+
+  .slider__controls {
+    margin-top: 526px;
+    width: 590px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    width: 650px;
+    min-height: 650px;
+  }
+
+  .slider__image-wrapper {
+    grid-template-columns: 650px;
+  }
+
+  .slider__controls {
+    margin-top: 550px;
+  }
+}

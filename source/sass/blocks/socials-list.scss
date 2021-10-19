@@ -17,3 +17,16 @@
     margin-right: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .socials-list {
+    width: 300px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials-list {
+    width: 500px;
+  }
+}
