@@ -1,0 +1,42 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  padding: 11px 10px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: inherit;
+  line-height: 20px;
+  color: $basic_white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:focus {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-offset: 1px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &--green {
+    background-color: $basic_green;
+
+    &:hover,
+    &:active {
+      background-color: $basic_green-2;
+    }
+
+    &:active {
+      color: transparentize($basic_white, 0.7);
+    }
+
+    &:focus {
+      outline-color: $basic_green-2;
+    }
+  }
+}

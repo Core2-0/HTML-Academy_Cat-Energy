@@ -1,24 +1,11 @@
-.page-header {
-  background-color: transparent;
-  position: relative;
-}
-
 .page-header__logo {
   width: 235px;
   height: 66px;
   display: block;
   margin: 0;
-  padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    padding: 0 30px;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .page-header__logo {
     width: 190px;
     padding: 3px 0 0;

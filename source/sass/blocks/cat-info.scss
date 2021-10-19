@@ -6,7 +6,7 @@
 }
 
 .cat-info__list {
-  @include clear-list;
+  @include list-reset;
 }
 
 .cat-info__item {

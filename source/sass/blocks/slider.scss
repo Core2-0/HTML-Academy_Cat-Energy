@@ -1,3 +1,17 @@
+.slider {
+  display: grid;
+  width: 280px;
+  min-height: 330px;
+}
+
+.slider__image-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 280px;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
 .slider__image {
   display: none;
 
@@ -7,8 +21,17 @@
 }
 
 .slider__controls {
+  z-index: 10;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  margin-top: 264px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 230px;
+  height: 40px;
 }
 
 .slider__after,

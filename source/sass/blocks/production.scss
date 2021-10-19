@@ -3,5 +3,5 @@
 }
 
 .production__list {
-  @include clear-list;
+  @include list-reset;
 }

@@ -1,0 +1,41 @@
+:root {
+  --content-padding-mobile: 20px;
+  --content-padding-tablet: 30px;
+  --content-padding-desktop: 40px;
+  --content-width-mobile: (@mobile-width - var(--content-padding-mobile) * 2);
+  --content-width-tablet: (@tablet-width - var(--content-padding-tablet) * 2);
+  --content-width-desktop: (@desktop-width - var(--content-padding-desktop) * 2);
+}
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1220px;
+
+// $tablet: #{"(min-width: ${tablet-width})"};
+// $desktop: #{"(min-width: ${desktop-width})"};
+
+$font-family-base: "Oswald", "Tahoma", sans-serif;
+$font-family-second: "Arial", sans-serif;
+
+$font-size-base: 14px;
+$line-height-base: 18px;
+$font-size-base--tablet: 16px;
+$line-height-base--tablet: 24px;
+
+$basic_black: #000000;
+$special_black: #111111;
+$special-black-2: #222222;
+$basic_white: #ffffff;
+$basic_green: #68b738;
+$basic_green-2: #5eaa2f;
+$basic_grey: #f2f2f2;
+$special_grey: #ebebeb;
+$special_grey-2: #cdcdcd;
+$special_grey-3: #666666;
+$special_dark-grey: #444444;
+$special_dark-grey-2: #222222;
+$status_error: #ff8282;
+$background: #e5e5e5;
+$background-2: #eaeaea;
+$border: #d9d9d9;
+$border-2: #e6e6e6;

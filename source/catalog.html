@@ -7,32 +7,26 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <div class="page-header__wrapper">
-        <div class="page-header__inner">
-          <a>
-            <img class="page-header__logo-image" width="33" height="37" src="img/logo-mobile.svg" alt="">
-          </a>
-          <a>
-            <img class="page-header__logo-name" width="100" height="18" src="img/logo-name.svg" alt="">
-          </a>
-          <button class="page-header__toggle-menu" type="button"><span class="visually-hidden">Открыть
-              меню</span></button>
-        </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-      </div>
+    <header class="page-header page-header--index">
+      <div class="page-header__nav-wrapper wrapper">
+      <a href="index.html" class="page-header__logo">
+        <img src="img/logo-mobile.svg" width="192" height="66" alt="Логотип «Cat Energy»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle-menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html" class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
+    </div>
     </header>
     <main class="page-main">
       <div class="container">
@@ -207,16 +201,21 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="location">
-        <h2 class="visually-hidden">Адрес офиса компании «Cat Energy»</h2>
-        <p class="location__slogan">приглашаем к сотрудничеству дилеров!</p>
-        <p class="location__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <!-- здесь будет карта -->
+      <section class="page-footer__location location">
+        <div class="location__wrapper wrapper">
+          <h2 class="visually-hidden">Адрес офиса компании «Cat Energy»</h2>
+          <p class="location__slogan">приглашаем к сотрудничеству дилеров!</p>
+          <address class="location__adress">
+            ул. Большая Конюшенная, д. 19/8<br>
+            <span>Санкт-Петербург</span>
+          </address>
+        </div>
+        <div class="location__map"></div>
       </section>
-      <section class="contacts container">
+      <section class="page-footer__contacts contacts wrapper">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="contacts__logo">
-          <img src="img/logo-name.svg" alt="Логотип магазина «Cat Energy»">
+          <img src="img/logo-name.svg" width="130" height="25" alt="Логотип магазина «Cat Energy»">
         </a>
         <ul class="socials-list">
           <li class="socials-list__item">
@@ -232,8 +231,10 @@
         <div class="contacts__developers">
           <a href="#">HTML Academy</a>
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
-            </svg>
+            <path
+              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+              fill="#666666" />
+          </svg>
         </div>
       </section>
     </footer>

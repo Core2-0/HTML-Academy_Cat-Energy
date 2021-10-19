@@ -5,7 +5,7 @@
 }
 
 .additionally__list {
-  @include clear-list;
+  @include list-reset;
 }
 
 .additionally__item label {

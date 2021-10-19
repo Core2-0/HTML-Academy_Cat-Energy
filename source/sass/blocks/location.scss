@@ -1,27 +1,27 @@
-.location {
+.location__wrapper {
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 26px;
   background-color: $basic_white;
 }
 
-.location__header {
-  padding: 30px 20px 25px;
-}
-
-.location__wrapper {
-  display: flex;
-}
-
 .location__slogan {
+  margin: 0;
+  width: 140px;
+  font-size: 16px;
+  line-height: 20px;
   color: $special_black;
   text-transform: uppercase;
-  width: 50%;
 }
 
 .location__adress {
+  margin-left: auto;
+  width: 140px;
+  font-family: $font-family-second;
   font-size: 14px;
   line-height: 20px;
-  color: $special_dark-grey;
-  text-align: right;
-  width: 50%;
+  font-style: normal;
+  color: $special_black;
 }
 
 .location__map {

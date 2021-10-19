@@ -6,7 +6,7 @@
 }
 
 .cat-owner-info__list {
-  @include clear-list;
+  @include list-reset;
 }
 
 .cat-owner-info__item label,

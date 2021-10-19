@@ -1,6 +1,5 @@
 .page {
   height: 100%;
-  box-sizing: border-box;
 }
 
 .page__body {
@@ -9,40 +8,17 @@
   align-content: start;
 
   margin: 0;
-  padding: 0;
+  min-width: $mobile-width;
+  min-height: 100%;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
   font-weight: 400;
   color: $basic_black;
-}
+  background-color: $basic_white;
 
-@media (min-width: $tablet-width) {
-  .page__body {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page__body {
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 697px;
-      background-color: $basic_green;
-      background-image:
-        linear-gradient(rgba($color: $basic_green, $alpha: 0.85), rgba($color: $basic_green, $alpha: 0.85)),
-        url("../../img/promo/promo-background.jpg");
-      background-size:
-        auto 697px,
-        cover;
-      background-position-x: right;
-      background-repeat: no-repeat;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-base--tablet;
+    line-height: $line-height-base--tablet;
   }
 }

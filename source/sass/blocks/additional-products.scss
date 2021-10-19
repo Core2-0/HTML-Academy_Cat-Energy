@@ -3,7 +3,7 @@
 }
 
 .additional-products__list {
-  @include clear-list;
+  @include list-reset;
   margin: 0 0 39px 0;
 }
 

@@ -6,7 +6,7 @@
 }
 
 .filter-programm__list {
-  @include clear-list;
+  @include list-reset;
 }
 
 .filter-programm__item label {
