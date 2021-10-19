@@ -1,5 +1,5 @@
 @media (min-width: $desktop-width) {
-  .page-header {
+  .page-header--index {
     background-image:
       linear-gradient(90deg, $basic_white 50%, rgba($color: $basic_green, $alpha: 0.85) 50%),
       url("../../img/promo/promo-background.jpg");
