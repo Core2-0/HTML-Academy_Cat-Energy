@@ -39,4 +39,22 @@
       outline-color: $basic_green-2;
     }
   }
+
+  &--grey {
+    background-color: $basic_grey;
+    color: $special_dark-grey;
+
+    &:hover,
+    &:active {
+      background-color: $special_grey;
+    }
+
+    &:active {
+      color: transparentize($special_dark-grey, 0.7);
+    }
+
+    &:focus {
+      outline-color: $special_grey-2;
+    }
+  }
 }

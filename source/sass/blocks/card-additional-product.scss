@@ -1,0 +1,32 @@
+.card-additional-product {
+  padding-top: 13px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $special_grey-2;
+}
+
+.card-additional-product__title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  color: $special-black-2;
+  text-transform: uppercase;
+}
+
+.card-additional-product__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-additional-product__specification-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-family: $font-family-second;
+  line-height: 14px;
+}
+
+.card-additional-product__specification-list dd {
+  margin-left: 0;
+}
