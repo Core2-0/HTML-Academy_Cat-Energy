@@ -29,3 +29,22 @@
     border-right: 1px solid $special_grey-2;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additional-products {
+    display: grid;
+    grid-template-columns: auto 245px;
+    column-gap: 80px;
+  }
+
+  .additional-products__list {
+    border-left: none;
+    border-right: none;
+    margin: 0;
+    max-width: none;
+  }
+
+  .additional-products__title {
+    grid-column: 1 / -1;
+  }
+}

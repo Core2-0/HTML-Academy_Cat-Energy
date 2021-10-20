@@ -24,3 +24,32 @@
   color: $basic_white;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .gift {
+    flex-direction: row;
+    max-width: 708px;
+    min-height: 200px;
+    background-image: url("../../img/gift/bg_gift-tablet.jpg");
+  }
+
+  .gift__slogan {
+    margin: 0 120px 0 auto;
+    width: 165px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    flex-direction: column;
+    background-image: url("../../img/gift/bg_gift-desktop.jpg");
+    width: 245px;
+  }
+
+  .gift__slogan {
+    margin: 108px 0 0;
+    width: 70%;
+    text-align: center;
+  }
+}
