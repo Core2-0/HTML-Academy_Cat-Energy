@@ -1,0 +1,87 @@
+.form-request__fieldset-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-request__legend {
+  max-width: 182px;
+}
+
+.form-request__cat-info {
+  margin-bottom: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.form-request__select-programm {
+  margin-left: calc(var(--content-padding-mobile) * -1);
+  margin-right: calc(var(--content-padding-mobile) * -1);
+  margin-bottom: 28px;
+  padding: 20px var(--content-padding-mobile);
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+}
+
+.form-request__comment {
+  padding-top: 33px;
+  margin-bottom: 28px;
+}
+
+.form-request__additionally {
+  margin-bottom: 10px;
+  padding-top: 34px;
+  padding-bottom: 22px;
+}
+
+.form-request__contacts {
+  margin-bottom: 10px;
+  padding-top: 33px;
+  padding-bottom: 18px;
+}
+
+.form-request__list {
+  @include list-reset;
+  display: grid;
+  row-gap: 13px;
+}
+
+.form-request__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-request label {
+  margin-right: 12px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+}
+
+.form-request input:not([type="radio"]):not([type="checkbox"]),
+.form-request textarea {
+  flex-grow: 1;
+  box-sizing: border-box;
+  border: 1px solid $border-2;
+  padding: 12px;
+  min-height: 46px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  text-transform: uppercase;
+  outline: 0;
+}
+
+.form-request textarea {
+  display: block;
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+}
+
+.form-request__button {
+  width: 100%;
+}
