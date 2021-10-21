@@ -1,43 +1,47 @@
+// Normalize
+@import "normalize.scss";
+
 // Fonts
 @import "fonts.scss";
 
 // Global
-@import "colors.scss";
+@import "variables.scss";
 @import "global.scss";
-@import "mixins.scss";
-@import "container.scss";
+@import "mixins/lists.scss";
+@import "helpers/wrapper.scss";
+@import "helpers/visually-hidden.scss";
 
 // Blocks
 // Blocks-Global
 @import "blocks/page.scss";
-@import "blocks/slider.scss";
+@import "blocks/button.scss";
+@import "blocks/heading.scss";
 
 // Page-Header
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
+@import "blocks/preview.scss";
 
 // Page-Main
 // index.html
 @import "blocks/page-main.scss";
-@import "blocks/preview.scss";
 @import "blocks/programm-section.scss";
 @import "blocks/features.scss";
 @import "blocks/stats.scss";
+@import "blocks/result-list.scss";
+@import "blocks/slider.scss";
 
 // catalog.html
 @import "blocks/production.scss";
-@import "blocks/card.scss";
+@import "blocks/card-product.scss";
 @import "blocks/additional-products.scss";
+@import "blocks/card-additional-product";
 @import "blocks/gift.scss";
 
 // form.html
-@import "blocks/questionary.scss";
-@import "blocks/cat-info.scss";
-@import "blocks/filter-programm.scss";
-@import "blocks/cat-owner-info.scss";
-@import "blocks/comment.scss";
-@import "blocks/additionally.scss";
+@import "blocks/selection.scss";
+@import "blocks/form-request.scss";
 
 // Page-Footer
 @import "blocks/page-footer.scss";

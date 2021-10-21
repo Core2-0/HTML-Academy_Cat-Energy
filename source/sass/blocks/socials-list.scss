@@ -1,4 +1,32 @@
 .socials-list {
-  @include clear-list;
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  border-top: 1px solid $border;
   border-bottom: 1px solid $border;
+}
+
+.socials-list__item {
+  margin-right: 33px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .socials-list {
+    width: 300px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .socials-list {
+    width: 500px;
+  }
 }

@@ -1,3 +1,44 @@
-.main-nav {
-  
+.main-nav__logo {
+  width: 235px;
+  height: 66px;
+  display: block;
+  margin: 0;
+}
+
+.main-nav__toggle-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .main-nav__logo {
+    width: 190px;
+    padding: 3px 0 0;
+  }
+
+  .main-nav__toggle-menu {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    padding-top: 54px;
+    padding-bottom: 28px;
+  }
+
+  .main-nav__logo {
+    padding: 0;
+  }
 }

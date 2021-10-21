@@ -1,27 +1,121 @@
 .stats {
+  padding-top: 17px;
   background-color: $background-2;
-  padding: 27px 0 0 0;
+}
+
+.stats__text-wrapper {
+  padding-bottom: 18px;
+}
+
+.stats__title {
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: $basic_black;
+}
+
+.stats__text {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-family: $font-family-second;
+  color: $special_dark-grey;
+}
+
+.stats__result-wrapper {
+  padding-top: 10px;
+}
+
+.stats__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .stats__lead {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  text-transform: uppercase;
 }
 
-.stats__text {
-  font-family: Arial, sans-serif;
-  color: $special_dark-grey;
+.stats__slider {
+  margin: 0 auto;
 }
 
-.stats__list dt {
-  font-size: 24px;
-  line-height: 24px;
+@media (min-width: $tablet-width) {
+  .stats {
+    padding-top: 44px;
+    background-color: transparent;
+  }
+
+  .stats__text-wrapper {
+    padding-bottom: 52px;
+  }
+
+  .stats__title {
+    margin-bottom: 64px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .stats__text {
+    max-width: 680px;
+  }
+
+  .stats__result-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 39px;
+  }
+
+  .stats__lead {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    max-width: 180px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+  }
 }
 
-.stats__list dd {
-  margin: 0;
-  font-size: 12px;
-  line-height: 12px;
-  color: $special_dark-grey;
+@media (min-width: $desktop-width) {
+  .stats {
+    padding-top: 0;
+    background-image:
+      linear-gradient(180deg, $basic_white 190px, transparent 190px),
+      linear-gradient(90deg, $basic_grey 50%, $background-2 50%);
+    padding-bottom: 64px;
+  }
+
+  .stats__wrapper {
+    display: flex;
+  }
+
+  .stats__text-wrapper {
+    width: 610px;
+  }
+
+  .stats__title {
+    margin-top: 56px;
+    margin-bottom: 146px;
+  }
+
+  .stats__text {
+    min-width: 436px;
+  }
+
+  .stats__result-wrapper {
+    display: block;
+    padding-top: 54px;
+    width: 366px;
+  }
+
+  .stats__lead {
+    display: flex;
+    justify-content: space-between;
+    min-width: 328px;
+    text-align: left;
+  }
 }

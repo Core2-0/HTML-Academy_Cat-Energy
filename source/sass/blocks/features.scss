@@ -1,27 +1,130 @@
 @for $i from 1 through 4 {
   .features__item--step-#{$i}::before {
     content: "";
-    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $basic_green;
     background-image: url("../../img/features/logo-step-#{$i}.svg");
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
-    margin: 0 20px 0 0;
   }
 }
 
 .features {
-  padding: 0 0 42px 0;
+  position: relative;
+  padding-top: 4px;
+  padding-bottom: 42px;
 }
 
-.features__item {
-  margin: 0 0 20px 0;
-  &:last-child {
-    margin: 0;
-  }
+.features__title {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: $basic_black;
 }
 
 .features__list {
-  @include clear-list;
+  @include list-reset;
+  display: grid;
+  row-gap: 20px;
+}
+
+.features__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  min-height: 60px;
+  font-family: $font-family-second;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  @for $i from 1 through 4 {
+    .features__item--step-#{$i}::before {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  @for $i from 1 through 4 {
+    .features__item--step-#{$i}::after {
+      content: "";
+      position: absolute;
+      top: -38px;
+      right: 0;
+      width: 136px;
+      height: 280px;
+      background-image: url("../../img/features/bg-step-#{$i}.svg");
+      background-position-x: right;
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  .features {
+    padding-top: 20px;
+    padding-bottom: 6px;
+  }
+
+  .features__title {
+    margin-bottom: 72px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .features__list {
+    grid-template-columns: repeat(2, 34.6%);
+    column-gap: 140px;
+    row-gap: 37px;
+  }
+
+  .features__item {
+    display: block;
+    padding-top: 112px;
+    padding-bottom: 12px;
+    padding-left: 0;
+    min-height: 156px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  @for $i from 1 through 4 {
+    .features__item--step-#{$i}::after {
+      top: -38px;
+      right: 0;
+      width: 136px;
+      height: 280px;
+    }
+  }
+
+  .features {
+    padding-top: 38px;
+    padding-bottom: 12px;
+  }
+
+  .features__title {
+    margin-bottom: 72px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .features__list {
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+  }
+
+  .features__item {
+    min-height: 118px;
+  }
 }

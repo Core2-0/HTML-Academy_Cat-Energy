@@ -1,0 +1,19 @@
+.selection {
+  overflow: hidden;
+  padding-top: 6px;
+  padding-bottom: 31px;
+}
+
+@media (min-width: $tablet-width) {
+  .selection {
+    padding-top: 15px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection {
+    padding-top: 33px;
+    padding-bottom: 80px;
+  }
+}

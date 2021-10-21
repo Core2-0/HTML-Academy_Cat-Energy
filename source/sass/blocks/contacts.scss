@@ -1,14 +1,32 @@
-.contacts {
-  background-color: $basic_grey;
-  text-align: center;
+.contacts__logo {
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin-bottom: 32px;
 }
 
-.contacts__logo {
-  border-bottom: 1px solid $border;
+.contacts__developers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 22px 0;
 }
 
 .contacts__developers a {
-  font-family: Arial, sans-serif;
+  font-family: $font-family-second;
   color: $special_dark-grey;
   font-size: 16px;
+  text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__logo {
+    margin-right: 37px;
+    margin-bottom: 0;
+  }
+
+  .contacts__developers {
+    width: 165px;
+  }
 }
