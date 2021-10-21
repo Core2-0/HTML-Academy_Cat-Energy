@@ -23,10 +23,22 @@
     margin-bottom: 40px;
     font-size: 60px;
   }
+
+  .page-main__subtitle {
+    margin-top: 55px;
+    margin-left: 40px;
+    max-width: 380px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__header {
     padding-top: 28px;
+  }
+
+  .page-main__subtitle {
+    margin-left: 0;
   }
 }
