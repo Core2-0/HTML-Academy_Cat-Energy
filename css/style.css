@@ -456,24 +456,29 @@ img {
 
 .main-nav__toggle-menu {
   position: absolute;
-  top: 25px;
-  right: 20px;
+  top: 0;
+  right: 0;
   z-index: 2;
-  width: 24px;
-  height: 16px;
+  width: 64px;
+  height: 64px;
   cursor: pointer;
   border: none;
   background-color: transparent; }
-  .main-nav__toggle-menu--closed {
+  .main-nav__toggle-menu--closed::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 20px;
     height: 1.5px;
+    width: 24px;
     background-color: #000000;
     box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000; }
 
 .main-nav__toggle-menu--opened::before, .main-nav__toggle-menu--opened::after {
   content: "";
   position: absolute;
-  top: 6px;
-  right: 0;
+  top: 30px;
+  right: 19px;
   width: 24px;
   height: 2px;
   background-color: #000000; }
