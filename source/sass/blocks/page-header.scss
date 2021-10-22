@@ -1,10 +1,21 @@
 @media (min-width: $desktop-width) {
   .page-header--index {
-    background-image:
-      linear-gradient(90deg, $basic_white 50%, rgba($color: $basic_green, $alpha: 0.85) 50%),
-      url("../../img/promo/promo-background.jpg");
-    background-size: 100%, 720px 696px;
-    background-position: center, calc(50% + 360px) center;
-    background-repeat: no-repeat;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 696px;
+      background-image:
+        linear-gradient(90deg, rgba($color: $basic_green, $alpha: 0.85) 50%, rgba($color: $basic_green, $alpha: 0.85) 50%),
+        url("../../img/promo/promo-background.jpg");
+      background-size: 100%, cover;
+      background-position: center, right;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
   }
 }

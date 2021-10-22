@@ -67,5 +67,9 @@
 
   .site-list__link {
     font-size: 20px;
+
+    &--index {
+      color: $basic_white;
+    }
   }
 }
