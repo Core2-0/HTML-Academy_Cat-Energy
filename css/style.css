@@ -1404,6 +1404,25 @@ img {
     margin-top: auto;
     width: 100%; }
 
+.card-product__show-more {
+  position: relative;
+  padding: 0;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  color: #d9d9d9;
+  background-color: transparent; }
+  .card-product__show-more::before, .card-product__show-more::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: currentColor; }
+  .card-product__show-more::after {
+    transform: rotate(90deg); }
+
 @media (min-width: 768px) {
   .card-product {
     grid-template-columns: 1fr;
@@ -1546,7 +1565,9 @@ img {
     padding: 15px 0 14px; }
   .card-additional-product__specification-list {
     align-items: center;
-    margin: 0; }
+    margin: 0;
+    min-width: 288px;
+    justify-content: space-between; }
   .card-additional-product__title {
     margin-bottom: 0; } }
 
