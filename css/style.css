@@ -471,7 +471,7 @@ img {
       right: 0;
       width: 50%;
       height: 696px;
-      background-image: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../img/promo/promo-background.jpg");
+      background-image: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/promo/promo-background.jpg");
       background-size: 100%, cover;
       background-position: center, right;
       background-repeat: no-repeat;
@@ -623,7 +623,7 @@ img {
     left: 0;
     width: 100%;
     height: 305px;
-    background-image: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../../img/promo/promo-bg-mobile.jpg");
+    background-image: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/promo/promo-bg-mobile.jpg");
     background-size: 100% 305px, cover;
     background-position: top center;
     background-repeat: no-repeat;
