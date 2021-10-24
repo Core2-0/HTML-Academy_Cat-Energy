@@ -13,7 +13,7 @@
           <a href="index.html" class="main-nav__logo">
             <img src="img/logo-mobile.svg" width="192" height="66" alt="Логотип «Cat Energy»">
           </a>
-          <button class="main-nav__toggle-menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__toggle-menu main-nav__toggle-menu--closed main-nav__toggle-menu--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__site-list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -183,7 +183,7 @@
               </article>
           </li>
           <li class="production__item card-product card-product--more">
-              <button></button>
+              <button class="card-product__show-more"></button>
                 <p>Показать еще 100500 товаров</p>
                 <p>На самом деле вкусов гораздо больше!</p>
               <a class="card-product__button card-product__button--more button button--grey" href="#">показать все</a>
@@ -293,5 +293,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
