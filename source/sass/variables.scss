@@ -1,15 +1,15 @@
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1300px;
+
 :root {
   --content-padding-mobile: 20px;
   --content-padding-tablet: 30px;
   --content-padding-desktop: 40px;
-  --content-width-mobile: ($mobile-width - var(--content-padding-mobile) * 2);
-  --content-width-tablet: ($tablet-width - var(--content-padding-tablet) * 2);
-  --content-width-desktop: ($desktop-width - var(--content-padding-desktop) * 2);
+  --content-width-mobile: #{"calc(#{$mobile-width} - var(--content-padding-mobile) * 2)"};
+  --content-width-tablet: #{"calc(#{$tablet-width} - var(--content-padding-tablet) * 2)"};
+  --content-width-desktop: #{"calc(#{$desktop-width} - var(--content-padding-desktop) * 2)"};
 }
-
-$mobile-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1300px;
 
 // $tablet: #{"(min-width: ${tablet-width})"};
 // $desktop: #{"(min-width: ${desktop-width})"};

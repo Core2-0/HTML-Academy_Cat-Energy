@@ -13,7 +13,7 @@
     left: -20%;
     right: -20%;
     transform: translateY(-50%);
-    height: 1.333em;
+    height: 1.33em;
     background-color: $basic_white;
     z-index: -1;
   }
@@ -54,7 +54,7 @@
 
     &::after {
       // left: #{"calc((50vw - var(--content-width-desktop) / 2) * -1)"};
-      left: #{"calc((50vw - (#{$desktop-width} - var(--content-padding-desktop) * 2) / 2) * -1)"};
+      left: #{"calc((50vw - var(--content-width-desktop) / 2) * -1)"};
     }
   }
 }

@@ -51,7 +51,7 @@
     font-weight: 400;
     line-height: 25px;
 
-    &:not([href]):after {
+    &:not([href])::after {
       content: "";
       position: absolute;
       left: 0;

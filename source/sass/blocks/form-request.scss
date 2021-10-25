@@ -67,6 +67,7 @@
   --radio-outer-diameter: 30px;
   --radio-inner-diameter: 13px;
   min-height: var(--radio-outer-diameter);
+
   &::before,
   &::after {
     content: "";
@@ -88,7 +89,7 @@
 }
 
 .form-request__item input[type="radio"]:checked + .form-request__label-radio::after {
-  left: calc((var(--radio-outer-diameter) - var(--radio-inner-diameter))/2);
+  left: calc((var(--radio-outer-diameter) - var(--radio-inner-diameter)) / 2);
   width: var(--radio-inner-diameter);
   height: var(--radio-inner-diameter);
   background-color: $basic_green;
@@ -111,15 +112,15 @@
     width: var(--checkbox-width);
     height: var(--checkbox-height);
     border: 1px solid #cdcdcd;
-    background-color: #fff;
+    background-color: $basic_white;
   }
 }
 
 .form-request__item input[type="checkbox"]:checked + .form-request__label-checkbox::after {
   content: "";
   position: absolute;
-  left: calc((var(--checkbox-width) - var(--checkbox-tick-width))/2);
-  top: calc((var(--checkbox-width) - var(--checkbox-tick-width))/2);
+  left: calc((var(--checkbox-width) - var(--checkbox-tick-width)) / 2);
+  top: calc((var(--checkbox-width) - var(--checkbox-tick-width)) / 2);
   width: var(--checkbox-tick-width);
   height: var(--checkbox-tick-height);
   transform: rotate(-45deg);
