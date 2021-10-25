@@ -6,13 +6,55 @@
   line-height: 24px;
   font-weight: 400;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    right: -20%;
+    transform: translateY(-50%);
+    height: 1.33em;
+    background-color: $basic_white;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0.6em;
+    left: #{"calc(var(--content-padding-mobile) * -1)"};
+    width: 100vw;
+    height: 3px;
+    background-color: #68b738;
+    z-index: -2;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 37px;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      left: 0;
+      right: -37px;
+    }
+
+    &::after {
+      left: #{"calc(var(--content-padding-tablet) * -1)"};
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
+
+    &::before {
+      left: -40px;
+      right: -40px;
+    }
+
+    &::after {
+      // left: #{"calc((50vw - var(--content-width-desktop) / 2) * -1)"};
+      left: #{"calc((50vw - var(--content-width-desktop) / 2) * -1)"};
+    }
   }
 }
