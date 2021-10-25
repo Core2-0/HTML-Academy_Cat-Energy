@@ -16,6 +16,12 @@
       background-position: center, right;
       background-repeat: no-repeat;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image:
+          linear-gradient(90deg, rgba($color: $basic_green, $alpha: 0.85) 50%, rgba($color: $basic_green, $alpha: 0.85) 50%),
+          url("../../img/promo/promo-background@2x.jpg");
+      }
     }
   }
 }

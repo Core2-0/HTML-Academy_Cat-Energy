@@ -32,6 +32,10 @@
   background-size: cover;
   background-position-y: 50%;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/map-mobile@2x.png");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -60,6 +64,10 @@
 
   .location__map {
     background-image: url("../../img/map-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/map-tablet@2x.png");
+    }
   }
 }
 
@@ -78,5 +86,9 @@
 
   .location__map {
     background-image: url("../../img/map.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/map@2x.png");
+    }
   }
 }
