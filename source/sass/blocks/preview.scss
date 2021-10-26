@@ -19,6 +19,12 @@
     background-position: top center;
     background-repeat: no-repeat;
     z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(180deg, rgba($color: $basic_green, $alpha: 0.85) 50%, rgba($color: $basic_green, $alpha: 0.85) 50%),
+        url("../../img/promo/promo-bg-mobile@2x.jpg");
+    }
   }
 }
 
