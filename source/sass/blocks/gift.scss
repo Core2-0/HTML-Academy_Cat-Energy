@@ -8,10 +8,14 @@
   max-width: 500px;
   min-height: 290px;
   background-color: $basic_green;
-  background-image: url("../../img/gift/bg_gift.jpg");
+  background-image: url("../../img/gift/bg_gift-mobile.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/gift/bg_gift-mobile@2x.jpg");
+  }
 }
 
 .gift__slogan {
@@ -31,6 +35,10 @@
     max-width: 708px;
     min-height: 200px;
     background-image: url("../../img/gift/bg_gift-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift/bg_gift-tablet@2x.jpg");
+    }
   }
 
   .gift__slogan {
@@ -46,6 +54,10 @@
     background-image: url("../../img/gift/bg_gift-desktop.jpg");
     width: 245px;
     margin-top: 46px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/gift/bg_gift-desktop@2x.jpg");
+    }
   }
 
   .gift__slogan {
