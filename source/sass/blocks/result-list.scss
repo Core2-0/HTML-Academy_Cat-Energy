@@ -28,8 +28,18 @@
 
 .result-list__term span {
   display: inline-flex;
-  min-width: 70%;
+  max-width: 70%;
   background-color: $basic_grey;
+
+  &::before {
+    content: "";
+    margin-right: 10px;
+  }
+
+  &::after {
+    content: "";
+    margin-left: 10px;
+  }
 }
 
 .result-list__description {
