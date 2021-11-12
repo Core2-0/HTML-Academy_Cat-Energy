@@ -1,21 +1,22 @@
 // Slider
-const sliderImageBefore = document.querySelector('.slider__cat-before .slider__image');
-const sliderImageAfter = document.querySelector('.slider__cat-after .slider__image');
-const beforeButton = document.querySelector('.slider__before');
-const afterButton = document.querySelector('.slider__after');
+const progress = document.querySelector('.slider');
+console.log(progress.classList.contains('slider__image-before--active'));
 
-beforeButton.setAttribute('disabled', 'disabled');
+if (progress) {
+  const btnBefore = progress.querySelector('.slider__button--before');
+  const btnAfter = progress.querySelector('.slider__button--after');
 
-beforeButton.onclick = () => {
-  sliderImageBefore.classList.add('slider__image--show');
-  sliderImageAfter.classList.remove('slider__image--show');
-  beforeButton.setAttribute('disabled', 'disabled');
-  afterButton.removeAttribute('disabled');
-}
+  btnBefore.addEventListener('click', function () {
+    if(progress.classList.contains('slider__image-after--active')) {
+      console.log('click');
+      // progress.classList.remove('slider__image-after--active');
+    }
+  })
 
-afterButton.onclick = () => {
-  sliderImageAfter.classList.add('slider__image--show');
-  sliderImageBefore.classList.remove('slider__image--show');
-  afterButton.setAttribute('disabled', 'disabled');
-  beforeButton.removeAttribute('disabled');
+  btnAfter.addEventListener('click', function () {
+    if(progress.classList.contains('slider__image-before--active')) {
+      console.log('click');
+      // progress.classList.remove('slider__image-before--active');
+    }
+  })
 }

@@ -110,15 +110,16 @@
         </div>
         <div class="stats__slider slider">
           <div class="slider__image-wrapper">
-            <div class="slider__image-before"></div>
-            <div class="slider__image-after"></div>
+            <div class="slider__image-before slider__image-before--active" style="width: 100%"></div>
+            <div class="slider__image-after" style="width: 0%;"></div>
           </div>
           <div class="slider__controls">
-            <button class="slider__button" type="button">Было</button>
+            <button class="slider__button slider__button--before" type="button">Было</button>
             <div class="slider__range">
+              <input class="slider__range-input" type="range" min="1" max="100" value="50">
               <div class="slider__range-toggle"></div>
             </div>
-            <button class="slider__button" type="button">Стало</button>
+            <button class="slider__button slider__button--after" type="button">Стало</button>
           </div>
         </div>
       </div>

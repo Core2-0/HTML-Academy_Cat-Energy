@@ -1,4 +1,5 @@
 .slider__image-wrapper {
+  display: flex;
   width: 320px;
   margin: 0 auto;
 }
@@ -16,7 +17,6 @@
 }
 
 .slider__image-after {
-  display: none;
   width: 320px;
   height: 272px;
   background-image: url(../../img/stats/after-mobile.png);
@@ -40,21 +40,25 @@
 .slider__range {
   width: 84px;
   height: 14px;
-  margin-top: 3px;
   background-color: $basic_white;
   border: 1px solid $special_grey-2;
   border-radius: 7px;
   position: relative;
   box-sizing: border-box;
+  padding: 3px 5px;
+  margin-top: 5px;
+}
+
+.slider__range-input {
+  display: none;
 }
 
 .slider__range-toggle {
-  width: 35px;
-  margin: 3px 6px;
-  padding: 3px;
+  width: 50%;
+  height: 6px;
+  border-radius: 10px;
   background-color: $basic_green;
-  border-radius: 7px;
-  cursor: pointer;
+  transform: translateY(0);
 }
 
 .slider__button {
@@ -66,7 +70,7 @@
   border: 0;
   background: 0 0;
   color: $special_black;
-  border-bottom: 1px dotted $special_black;
+  // border-bottom: 1px dotted $special_black;
 }
 
 @media (min-width: $tablet-width) {
