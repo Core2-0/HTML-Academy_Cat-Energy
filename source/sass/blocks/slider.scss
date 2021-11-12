@@ -1,77 +1,172 @@
-.slider {
-  display: grid;
-  width: 280px;
-  min-height: 330px;
-}
-
 .slider__image-wrapper {
-  position: relative;
-  display: grid;
-  grid-template-columns: 280px;
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
+  width: 320px;
+  margin: 0 auto;
 }
 
-.slider__image-figure {
-  margin: 0;
+.slider__image-before {
+  width: 320px;
+  height: 272px;
+  background-image: url(../../img/stats/before-mobile.png);
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url(../../img/stats/before-mobile@2x.png);
+    background-size: 320px 240px;
+  }
 }
 
-.slider__image {
+.slider__image-after {
   display: none;
+  width: 320px;
+  height: 272px;
+  background-image: url(../../img/stats/after-mobile.png);
+  background-repeat: no-repeat;
 
-  &--show {
-    display: block;
+  @media (min-resolution: 1.5dppx) {
+    background-image: url(../../img/stats/after-mobile@2x.png);
+    background-size: 320px 240px;
   }
 }
 
 .slider__controls {
-  z-index: 10;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 50px 30px 54px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  grid-row: 1 / -1;
-  grid-column: 1 / -1;
-  margin-top: 264px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 230px;
-  height: 40px;
+  justify-content: space-around;
+  box-sizing: border-box;
 }
 
-.slider__after,
-.slider__before {
+.slider__range {
+  width: 84px;
+  height: 14px;
+  margin-top: 3px;
+  background-color: $basic_white;
+  border: 1px solid $special_grey-2;
+  border-radius: 7px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.slider__range-toggle {
+  width: 35px;
+  margin: 3px 6px;
+  padding: 3px;
+  background-color: $basic_green;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.slider__button {
+  padding: 0 0 5px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  cursor: pointer;
+  border: 0;
+  background: 0 0;
+  color: $special_black;
+  border-bottom: 1px dotted $special_black;
 }
 
 @media (min-width: $tablet-width) {
-  .slider {
-    width: 708px;
-    min-height: 630px;
+  .slider__image-wrapper {
+    width: 768px;
+    display: flex;
+    flex-direction: row;
   }
 
-  .slider__image-wrapper {
-    grid-template-columns: 708px;
+  .slider__image-before {
+    width: 545px;
+    height: 548px;
+    background-image: url(../../img/stats/cat-fat.png);
+    background-position: 16px 11px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url(../../img/stats/cat-fat@2x.png);
+      background-size: 690px 517px;
+    }
+  }
+
+  .slider__image-after {
+    display: block;
+    width: 545px;
+    height: 548px;
+    background-image: url(../../img/stats/cat-skinny.png);
+    background-position: -338px 11px;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url(../../img/stats/cat-skinny@2x.png);
+      background-size: 690px 517px;
+    }
   }
 
   .slider__controls {
-    margin-top: 526px;
-    width: 590px;
+    width: 570px;
+    margin: 0 auto;
+    padding: 0 0 68px;
+    justify-content: space-between;
+  }
+
+  .slider__button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .slider__range {
+    width: 430px;
+    height: 6px;
+    margin-top: 7px;
+    background-color: $special_grey-4;
+    border: 0;
+  }
+
+  .slider__range-toggle {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid $special_grey-2;
+    width: 34px;
+    height: 34px;
+    top: -17px;
+    left: 194px;
+    background-color: $basic_white;
+    box-sizing: border-box;
+
+    &::after {
+      position: absolute;
+      content: "";
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      top: 12px;
+      left: 12px;
+      background-color: $basic_green;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .slider {
-    width: 650px;
-    min-height: 650px;
+  .slider__image-wrapper {
+    width: 640px;
+    margin: 0;
+    padding: 0;
   }
 
-  .slider__image-wrapper {
-    grid-template-columns: 650px;
+  .slider__image-before {
+    width: 355px;
+    height: 578px;
+    background-position: -10px 20px;
+  }
+
+  .slider__image-after {
+    width: 285px;
+    height: 578px;
+    background-position: -365px 20px;
   }
 
   .slider__controls {
-    margin-top: 550px;
+    margin-left: 70px;
   }
 }

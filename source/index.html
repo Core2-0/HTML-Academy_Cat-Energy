@@ -94,46 +94,31 @@
     <section class="stats">
       <div class="stats__wrapper wrapper">
         <div class="stats__description">
-          <div class="stats__text-wrapper">
-            <h2 class="stats__title">Живой пример</h2>
-            <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-              Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-              часов в день.</p>
-          </div>
-          <div class="stats__result-wrapper">
-            <dl class="stats__list result-list">
-              <div class="result-list__item">
-                <dt class="result-list__term">
-                  <span>снижение веса</span>
-                </dt>
-                <dd class="result-list__description">5 кг</dd>
-              </div>
-              <div class="result-list__item">
-                <dt class="result-list__term">
-                  <span>затрачено времени</span>
-                </dt>
-                <dd class="result-list__description">60 Дней</dd>
-              </div>
-            </dl>
-            <p class="stats__lead">Затраты на питание: 15 000 РУБ.</p>
-          </div>
+          <h2 class="stats__title">Живой пример</h2>
+          <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <dl class="stats__result-list">
+            <div class="stats__result-list-item">
+              <dt class="stats__term"><span>снижение веса</span></dt>
+              <dd class="stats__desc">5 кг</dd>
+            </div>
+            <div class="stats__result-list-item">
+              <dt class="stats__term"><span>затрачено времени</span></dt>
+              <dd class="stats__desc">60 Дней</dd>
+            </div>
+          </dl>
+          <p class="stats__total">Затраты на питание: <span>15 000 руб.</span></p>
         </div>
         <div class="stats__slider slider">
           <div class="slider__image-wrapper">
-            <figure class="slider__image-figure">
-              <picture class="slider__cat-before">
-                <source media="(min-width: 768px)" srcset="img/stats/cat-fat.png, img/stats/cat-fat@2x.png 2x">
-                <img class="slider__image slider__image--show" src="img/stats/before-mobile.png" srcset="img/stats/before-mobile@2x.png 2x" alt="Кот Борис до приема корма Cat Energy Slim">
-              </picture>
-              <picture class="slider__cat-after">
-                <source media="(min-width: 768px)" srcset="img/stats/cat-skinny.png, img/stats/cat-skinny@2x.png 2x">
-                <img class="slider__image" src="img/stats/after-mobile.png" srcset="img/stats/after-mobile@2x.png 2x" alt="Кот Борис после приема корма Cat Energy Slim">
-              </picture>
-            </figure>
+            <div class="slider__image-before"></div>
+            <div class="slider__image-after"></div>
           </div>
           <div class="slider__controls">
-            <button class="slider__before"><span>Было</span></button>
-            <button class="slider__after"><span>Стало</span></button>
+            <button class="slider__button" type="button">Было</button>
+            <div class="slider__range">
+              <div class="slider__range-toggle"></div>
+            </div>
+            <button class="slider__button" type="button">Стало</button>
           </div>
         </div>
       </div>
