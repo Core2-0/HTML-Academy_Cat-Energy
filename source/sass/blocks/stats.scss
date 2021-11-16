@@ -89,6 +89,7 @@
       linear-gradient(180deg, $basic_white 618px, transparent 0%),
       linear-gradient(270deg, $background-2 50%, $basic_grey 0%);
     border-top: 1px solid $border-2;
+    padding-bottom: 64px;
   }
 
   .stats__description {
@@ -104,7 +105,6 @@
   }
 
   .stats__text {
-    width: 700px;
     padding-bottom: 53px;
     font-size: 16px;
     line-height: 24px;
@@ -149,6 +149,7 @@
       linear-gradient(180deg, $basic_white 210px, transparent 0%),
       linear-gradient(270deg, $background-2 20%, $basic_grey 0%);
     border: 0;
+    padding-bottom: 75px;
   }
 
   .stats__wrapper {
@@ -161,7 +162,7 @@
     width: 580px;
     margin: 75px 0 0;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   .stats__title {
