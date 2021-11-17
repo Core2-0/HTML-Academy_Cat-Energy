@@ -33,18 +33,15 @@ btnAfter.addEventListener('click', function () {
   }
 });
 
-function handleMobile(media) {
-  if (media.matches) {
+if (document.Element.clientWidth < 767px) {
     range.value = 0;
     range.setAttribute('value', range.value);
 
     imageBefore.style.width = `${100 - range.value}%`;
     imageAfter.style.width = `${range.value}%`;
   }
-}
 
-function handleTablet(media) {
-  if (media.matches) {
+if (document.Element.clientWidth >= 768px) {
     range.value = 50;
     range.setAttribute('value', range.value);
 
@@ -57,9 +54,34 @@ function handleTablet(media) {
       imageAfter.style.width = `${range.value}%`;
     })
   }
-}
 
-mobileWidth.addListener(handleMobile);
-handleMobile(mobileWidth);
-tabletWidth.addListener(handleTablet);
-handleTablet(tabletWidth);
+// function handleMobile(media) {
+//   if (media.matches) {
+//     range.value = 0;
+//     range.setAttribute('value', range.value);
+
+//     imageBefore.style.width = `${100 - range.value}%`;
+//     imageAfter.style.width = `${range.value}%`;
+//   }
+// }
+
+// function handleTablet(media) {
+//   if (media.matches) {
+//     range.value = 50;
+//     range.setAttribute('value', range.value);
+
+//     imageBefore.style.width = `${range.value}%`;
+//     imageAfter.style.width = `${range.value}%`;
+
+//     range.addEventListener('input', function () {
+//       this.setAttribute('value', this.value);
+//       imageBefore.style.width = `${100 - range.value}%`;
+//       imageAfter.style.width = `${range.value}%`;
+//     })
+//   }
+// }
+
+// mobileWidth.addListener(handleMobile);
+// handleMobile(mobileWidth);
+// tabletWidth.addListener(handleTablet);
+// handleTablet(tabletWidth);
