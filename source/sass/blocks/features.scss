@@ -71,7 +71,6 @@
   }
 
   .features {
-    padding-top: 20px;
     padding-bottom: 6px;
   }
 
@@ -101,7 +100,7 @@
 @media (min-width: $desktop-width) {
   @for $i from 1 through 4 {
     .features__item--step-#{$i}::after {
-      top: -38px;
+      top: 0px;
       right: 0;
       width: 136px;
       height: 280px;
@@ -109,7 +108,7 @@
   }
 
   .features {
-    padding-top: 38px;
+    padding-top: 13px;
     padding-bottom: 12px;
   }
 

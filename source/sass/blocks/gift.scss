@@ -27,6 +27,20 @@
   line-height: 20px;
   color: $basic_white;
   text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -133px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 78px;
+    height: 80px;
+    background-image: url("../../img/icons/icon_gift.svg");
+    // background-size: 56px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -45,6 +59,12 @@
     margin: 0 120px 0 auto;
     width: 165px;
     text-align: left;
+
+    &::before {
+      top: 50%;
+      left: -345px;
+      transform: translateY(-57%);
+    }
   }
 }
 
@@ -64,5 +84,11 @@
     margin: 188px 0 0;
     width: 70%;
     text-align: center;
+
+    &::before {
+      top: -133px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

@@ -16,11 +16,13 @@
   .page-footer__contacts {
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 42px;
+    padding-top: 36px;
     padding-bottom: 38px;
   }
 }
 
-// @media (min-width: $desktop-width) {
-
-// }
+@media (min-width: $desktop-width) {
+  .page-footer__contacts {
+    padding-top: 40px;
+  }
+}
