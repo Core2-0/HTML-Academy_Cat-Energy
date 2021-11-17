@@ -106,16 +106,21 @@
     padding-bottom: 25px;
   }
 
+  .programm-section__list {
+    row-gap: 40px;
+  }
+
   .programm-section__item {
-    padding: 62px 52px;
+    padding: 58px 52px;
     min-height: 248px;
   }
 
   .programm-section__content {
     border-bottom: none;
+    padding-top: 0;
 
     &::before {
-      top: 30px;
+      top: 22px;
       left: auto;
       right: 10px;
       width: 200px;
@@ -123,7 +128,7 @@
     }
 
     &::after {
-      top: 18px;
+      top: 10px;
       left: auto;
       right: -24px;
       width: 268px;
@@ -147,8 +152,6 @@
 
   .programm-section__description {
     max-width: 62%;
-    margin-top: 12px;
-    margin-bottom: 12px;
     font-size: 16px;
     line-height: 24px;
   }

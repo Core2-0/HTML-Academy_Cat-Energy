@@ -1,5 +1,6 @@
 .stats {
   background-color: $basic_grey;
+  padding-bottom: 31px;
 }
 
 .stats__title {
@@ -13,7 +14,7 @@
 
 .stats__text {
   margin: 0;
-  padding: 0 10px 25px 0;
+  padding: 0 0 25px 0;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
@@ -149,7 +150,7 @@
       linear-gradient(180deg, $basic_white 210px, transparent 0%),
       linear-gradient(270deg, $background-2 20%, $basic_grey 0%);
     border: 0;
-    padding-bottom: 75px;
+    padding-bottom: 36px;
   }
 
   .stats__wrapper {
@@ -160,7 +161,7 @@
 
   .stats__description {
     width: 580px;
-    margin: 75px 0 0;
+    margin: 55px 0 0;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -171,7 +172,7 @@
 
   .stats__text {
     width: 439px;
-    padding: 0 0 68px;
+    padding: 0 0 69px;
   }
 
   .stats__term span {
@@ -181,6 +182,7 @@
   .stats__total {
     width: 340px;
     text-align: left;
+    padding-top: 23px;
   }
 
   .stats__total span {

@@ -2,32 +2,18 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-end;
-  padding-top: 20px;
+  padding-top: 17px;
   padding-bottom: 20px;
-  width: 100%;
   border-top: 1px solid $border;
   border-bottom: 1px solid $border;
-}
-
-.socials-list__item {
-  margin-right: 33px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  width: 134px;
 }
 
 @media (min-width: $tablet-width) {
   .socials-list {
-    width: 300px;
+    width: 130px;
     border: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .socials-list {
-    width: 500px;
   }
 }

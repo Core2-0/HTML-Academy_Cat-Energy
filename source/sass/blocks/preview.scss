@@ -11,7 +11,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 305px;
+    height: 300px;
     background-image:
       linear-gradient(180deg, rgba($color: $basic_green, $alpha: 0.85) 50%, rgba($color: $basic_green, $alpha: 0.85) 50%),
       url("../../img/promo/promo-bg-mobile.jpg");
@@ -34,7 +34,7 @@
 
 .preview__title {
   z-index: 5;
-  margin: 28px auto 11px;
+  margin: 25px auto 11px;
   max-width: 385px;
   font-size: 36px;
   font-weight: 400;
@@ -111,8 +111,8 @@
   .preview__link {
     grid-column-start: 1;
     grid-row-start: 3;
-    margin-top: 28px;
-    margin-left: 88px;
+    margin-top: 30px;
+    margin-left: 81px;
     padding: 16px 10px;
     width: 245px;
     font-size: 20px;
@@ -128,8 +128,7 @@
   .preview__content {
     grid-template-columns: 50% 50%;
     margin-left: 80px;
-    margin-right: 80px;
-    width: 1060px;
+    // width: 1060px;
   }
 
   .preview__title {
@@ -147,7 +146,7 @@
   }
 
   .preview__image {
-    transform: translateX(-29%);
+    transform: translateX(-38%);
     width: 552px;
     height: 499px;
   }
