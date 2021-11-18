@@ -69,7 +69,7 @@ window.matchMedia || (window.matchMedia = function() {
   };
 }());
 
-const mobileWidth = window.matchMedia('screen and (max-width: 767px');
+const mobileWidth = window.matchMedia('screen and (max-width: 767px)');
 const tabletWidth = window.matchMedia('screen and (min-width: 768px)');
 
 const progress = document.querySelector('.slider');
