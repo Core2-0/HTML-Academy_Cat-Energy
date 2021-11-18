@@ -11,7 +11,7 @@
       height: 696px;
       background-image:
         linear-gradient(90deg, rgba($color: $basic_green, $alpha: 0.85) 50%, rgba($color: $basic_green, $alpha: 0.85) 50%),
-        url("../../img/promo/promo-background.jpg");
+        url("../img/promo/promo-background.jpg");
       background-size: 100%, cover;
       background-position: center, right;
       background-repeat: no-repeat;
@@ -20,7 +20,7 @@
       @media (min-resolution: 2dppx) {
         background-image:
           linear-gradient(90deg, rgba($color: $basic_green, $alpha: 0.85) 50%, rgba($color: $basic_green, $alpha: 0.85) 50%),
-          url("../../img/promo/promo-background@2x.jpg");
+          url("../img/promo/promo-background@2x.jpg");
       }
     }
   }

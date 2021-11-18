@@ -14,7 +14,7 @@
     height: 300px;
     background-image:
       linear-gradient(180deg, rgba($color: $basic_green, $alpha: 0.85) 50%, rgba($color: $basic_green, $alpha: 0.85) 50%),
-      url("../../img/promo/promo-bg-mobile.jpg");
+      url("../img/promo/promo-bg-mobile.jpg");
     background-size: 100% 305px, cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
     @media (min-resolution: 2dppx) {
       background-image:
         linear-gradient(180deg, rgba($color: $basic_green, $alpha: 0.85) 50%, rgba($color: $basic_green, $alpha: 0.85) 50%),
-        url("../../img/promo/promo-bg-mobile@2x.jpg");
+        url("../img/promo/promo-bg-mobile@2x.jpg");
     }
   }
 }
@@ -128,7 +128,6 @@
   .preview__content {
     grid-template-columns: 50% 50%;
     margin-left: 80px;
-    // width: 1060px;
   }
 
   .preview__title {
