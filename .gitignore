@@ -12,3 +12,4 @@ source/css/*.css
 source/css/*.map
 Thumbs.db
 source/img/pixel-glass/*.*
+build/
