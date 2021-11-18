@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Cat Energy</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
   <!-- Pixel Glass -->
 <!-- <style>
@@ -68,6 +68,10 @@
         <p class="preview__title">Функциональное питание для котов</p>
         <p class="preview__subtitle">Занялся собой? Займись котом!</p>
         <picture class="preview__picture">
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/promo/promo-product-desktop.webp 1x, img/promo/promo-product-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/promo/promo-product-tablet.webp 1x, img/promo/promo-product-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/promo/promo-product-mobile.webp 1x, img/promo/promo-product-mobile@2x.webp 2x">
+
           <source media="(min-width: 1300px)" srcset="img/promo/promo-product-desktop.png, img/promo/promo-product-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/promo/promo-product-tablet.jpg, img/promo/promo-product-tablet@2x.jpg 2x">
           <img class="preview__image" src="img/promo/promo-product-mobile.png" srcset="img/promo/promo-product-mobile@2x.png 2x" width="552" height="499" alt="">
@@ -192,15 +196,14 @@
           </a>
         </li>
       </ul>
-      <a class="contacts__developers" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+      <a class="contacts__developers" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy
         <svg width="27" height="34">
           <use xlink:href="img/icons/sprite.svg#icon_html-academy"></use>
         </svg>
       </a>
     </section>
   </footer>
-  <script src="js/burger.js"></script>
-  <script src="js/slider.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
