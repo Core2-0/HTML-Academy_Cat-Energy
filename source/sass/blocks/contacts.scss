@@ -17,6 +17,10 @@
   padding: 22px 0;
 }
 
+.contacts__developers svg {
+  fill: $special_grey-3;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__logo {
     margin-right: 37px;

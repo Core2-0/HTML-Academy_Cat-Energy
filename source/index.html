@@ -17,13 +17,13 @@
     background-repeat: no-repeat;
     background-position:  50% 0;
     /* По умолчанию показывается мобильный макет */
-    background-image: url( "img/pixel-glass/Mobile.png" );
+    background-image: url( "../source/pixel-glass/Mobile-after.png" );
   }
   /* Планшет */
   @media ( min-width: 768px ) {
     HTML {
       /* Планшетный макет */
-      background-image: url( "img/pixel-glass/Tablet.png" );
+      background-image: url( "../source/pixel-glass/Tablet.png" );
     }
   }
   /* Десктоп */
@@ -181,30 +181,30 @@
       </a>
       <ul class="contacts__socials-list socials-list">
         <li class="socials-list__item">
-          <a href="https://www.vk.com" target="_blank" aria-label="vk">
-            <svg width="23" height="16">
-              <use xlink:href="img/icons/sprite.svg#icon_vk"></use>
+          <a class="socials-list__link" href="https://www.vk.com" target="_blank">
+            <svg class="socials-list__icon socials-list__icon--vk" width="24" height="13" role="img" aria-label="vkontakte" focusable="false">
+              <use xlink:href="img/icons/sprite.svg#icon_vkontakte"></use>
             </svg>
           </a>
         </li>
         <li class="socials-list__item">
-          <a href="https://www.instagram.com" target="_blank" aria-label="instagram">
-              <svg width="16" height="16">
+          <a class="socials-list__link" href="https://www.instagram.com" target="_blank">
+              <svg class="socials-list__icon socials-list__icon--instagram" width="17" height="17" role="img" aria-label="instagram" focusable="false">
                 <use xlink:href="img/icons/sprite.svg#icon_instagram"></use>
               </svg>
           </a>
         </li>
         <li class="socials-list__item">
-          <a href="https://www.facebook.com" target="_blank" aria-label="facebook">
-            <svg width="22" height="22">
+          <a class="socials-list__link" href="https://www.facebook.com" target="_blank">
+            <svg class="socials-list__icon socials-list__icon--fb" width="13" height="20" role="img" aria-label="facebook" focusable="false">
               <use xlink:href="img/icons/sprite.svg#icon_facebook"></use>
             </svg>
           </a>
         </li>
       </ul>
       <a class="contacts__developers" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy
-        <svg width="27" height="34">
-          <use xlink:href="img/icons/sprite.svg#icon_html-academy"></use>
+        <svg width="27" height="34" role="img" aria-label="Логотип HTMLAcademy" focusable="false">
+          <use xlink:href="img/icons/sprite.svg#htmlacademy"></use>
         </svg>
       </a>
     </section>
