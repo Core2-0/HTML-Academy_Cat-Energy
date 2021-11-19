@@ -1,23 +1,20 @@
 .socials-list {
   @include list-reset;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding-top: 17px;
-  padding-bottom: 20px;
+  padding: 19px 0;
   border-top: 1px solid $border;
   border-bottom: 1px solid $border;
   width: 100%;
   box-sizing: border-box;
-}
-
-.socials-list__item {
-  margin-right: 36px;
-
-  &:last-child {
-    margin-right: 0;
-  }
+  // display: grid;
+  // grid-template-columns: repeat(3, 30px);
+  // justify-content: center;
+  // align-items: end;
+  // justify-items: center;
+  // column-gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .socials-list__icon {
@@ -39,9 +36,23 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .socials-list__item {
+    margin-right: 33px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .socials-list {
     border: none;
+  }
+
+  .socials-list__item {
+    margin-right: 26px;
   }
 
   .socials-list__icon {

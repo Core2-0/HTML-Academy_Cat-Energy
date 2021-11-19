@@ -23,11 +23,17 @@
 
 @media (min-width: $tablet-width) {
   .contacts__logo {
-    margin-right: 37px;
+    margin-right: 40px;
     margin-bottom: 0;
   }
 
   .contacts__developers {
-    width: 165px;
+    width: 310px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__developers {
+    width: 222px;
   }
 }

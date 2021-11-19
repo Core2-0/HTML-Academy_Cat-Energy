@@ -31,7 +31,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: -133px;
+    top: -128px;
     left: 50%;
     transform: translateX(-50%);
     width: 78px;
@@ -63,7 +63,7 @@
     &::before {
       top: 50%;
       left: -345px;
-      transform: translateY(-57%);
+      transform: translateY(-55%);
     }
   }
 }
@@ -73,7 +73,6 @@
     flex-direction: column;
     background-image: url("../img/gift/bg_gift-desktop.jpg");
     width: 245px;
-    margin-top: 46px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift/bg_gift-desktop@2x.jpg");

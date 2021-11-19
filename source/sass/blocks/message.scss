@@ -24,7 +24,7 @@
 
 @media (min-width: $tablet-width) {
   .message {
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 
   .message__wrapper {
@@ -35,7 +35,9 @@
 
   .message__field {
     min-height: 174px;
-    padding: 9px 18px;
+    padding: 12px 18px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

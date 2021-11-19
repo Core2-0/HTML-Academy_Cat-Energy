@@ -1,5 +1,4 @@
 .additional-products {
-  padding-top: 28px;
   padding-bottom: 35px;
   overflow-x: hidden;
 }
@@ -19,19 +18,25 @@
 
 @media (min-width: $tablet-width) {
   .additional-products {
-    padding-top: 44px;
     padding-bottom: 72px;
+  }
+
+  .additional-products__title {
+    margin-bottom: 82px;
   }
 
   .additional-products__list {
     max-width: 708px;
     border-left: 1px solid $special_grey-2;
     border-right: 1px solid $special_grey-2;
-    margin-top: 45px;
+    margin-bottom: 77px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .additional-products {
+    padding-bottom: 94px;
+  }
   .additional-products__content {
     display: grid;
     grid-template-columns: auto 245px;

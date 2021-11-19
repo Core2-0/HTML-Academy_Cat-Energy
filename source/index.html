@@ -17,20 +17,20 @@
     background-repeat: no-repeat;
     background-position:  50% 0;
     /* По умолчанию показывается мобильный макет */
-    background-image: url( "../source/pixel-glass/Mobile-after.png" );
+    background-image: url( "../img/pixel-glass/Mobile-after.png" );
   }
   /* Планшет */
   @media ( min-width: 768px ) {
     HTML {
       /* Планшетный макет */
-      background-image: url( "../source/pixel-glass/Tablet.png" );
+      background-image: url( "../img/pixel-glass/Tablet.png" );
     }
   }
   /* Десктоп */
   @media ( min-width: 1300px ) {
     HTML {
       /* Десктопный макет */
-      background-image: url( "img/pixel-glass/Desktop.png" );
+      background-image: url( "../img/pixel-glass/Desktop.png" );
     }
   }
 
@@ -145,7 +145,7 @@
         </div>
         <div class="stats__slider slider">
           <div class="slider__image-wrapper">
-            <div class="slider__image-before slider__image-before--active"></div>
+            <div class="slider__image-before"></div>
             <div class="slider__image-after"></div>
           </div>
           <div class="slider__controls">
@@ -177,7 +177,9 @@
     <section class="page-footer__contacts contacts wrapper">
       <h2 class="visually-hidden">Контакты</h2>
       <a class="contacts__logo">
-        <img src="img/logo-name.svg" width="128" height="24" alt="Логотип магазина «Cat Energy»">
+        <svg width="128" height="24" role="img" aria-label="«Cat Energy»">
+          <use xlink:href="img/icons/sprite.svg#logo-name"></use>
+        </svg>
       </a>
       <ul class="contacts__socials-list socials-list">
         <li class="socials-list__item">
