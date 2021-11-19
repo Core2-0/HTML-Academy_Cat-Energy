@@ -45,6 +45,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.form-request__contacts-icon {
+  position: absolute;
+  right: 20px;
+  fill: $special-black-2;
+  transition: all 0.3s ease-out;
+
+  &--email {
+    width: 18px;
+    height: auto;
+  }
+
+  &--phone {
+    width: 20px;
+    height: auto;
+  }
 }
 
 .form-request__label {

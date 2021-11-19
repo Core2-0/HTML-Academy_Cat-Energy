@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 
     <!-- Pixel Glass -->
-<style>
+<!-- <style>
   HTML {
     background-repeat: no-repeat;
     background-position:  50% 0;
@@ -36,7 +36,7 @@
   BODY {
     opacity: .5;
   }
-</style>
+</style> -->
 <!-- Pixel Glass -->
   </head>
   <body class="page__body">
@@ -113,10 +113,16 @@
               <li class="form-request__item">
                 <label class="form-request__label" for="email-email">E-mail:*</label>
                 <input id="email-email" type="email" placeholder="kuklachev@gmail.com">
+                <svg class="form-request__contacts-icon form-request__contacts-icon--email" width="19" height="14" role="img" aria-label="Почта" focusable="false">
+                  <use xlink:href="img/icons/sprite.svg#icon_email"></use>
+                </svg>
               </li>
               <li class="form-request__item">
                 <label class="form-request__label" for="tel-tel">Телефон:*</label>
                 <input id="tel-tel" type="tel" placeholder="8 (960) 900-60-90">
+                <svg class="form-request__contacts-icon form-request__contacts-icon--phone" width="20" height="21" role="img" aria-label="Телефон" focusable="false">
+                  <use xlink:href="img/icons/sprite.svg#icon_phone"></use>
+                </svg>
               </li>
             </ul>
           </fieldset>
