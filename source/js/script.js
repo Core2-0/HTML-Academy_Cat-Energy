@@ -1,3 +1,23 @@
+// Burger Menu
+
+const mainSiteList = document.querySelector('.main-nav__site-list');
+const navToggle = document.querySelector('.main-nav__toggle-menu');
+
+mainSiteList.classList.remove('main-nav__site-list--nojs');
+navToggle.classList.remove('main-nav__toggle-menu--nojs');
+
+if (!mainSiteList.classList.contains('main-nav__site-list--closed')) {
+  mainSiteList.classList.add('main-nav__site-list--closed');
+}
+
+navToggle.onclick = () => {
+  mainSiteList.classList.toggle('main-nav__site-list--closed');
+  navToggle.classList.toggle('main-nav__toggle-menu--opened');
+  navToggle.classList.toggle('main-nav__toggle-menu--closed');
+};
+
+// Slider
+
 /*! matchMedia() polyfill - Test a CSS media type/query in JS. Authors & copyright (c) 2012: Scott Jehl, Paul Irish, Nicholas Zakas, David Knight. MIT license. https://github.com/paulirish/matchMedia.js/ */
 
 window.matchMedia || (window.matchMedia = function() {
@@ -49,10 +69,9 @@ window.matchMedia || (window.matchMedia = function() {
   };
 }());
 
-const mobileWidth = window.matchMedia('(max-width: 767px');
-const tabletWidth = window.matchMedia('(min-width: 768px)');
+const mobileWidth = window.matchMedia('screen and (max-width: 767px)');
+const tabletWidth = window.matchMedia('screen and (min-width: 768px)');
 
-// Slider
 const progress = document.querySelector('.slider');
 const imageAfter = progress.querySelector('.slider__image-after');
 const imageBefore = progress.querySelector('.slider__image-before');

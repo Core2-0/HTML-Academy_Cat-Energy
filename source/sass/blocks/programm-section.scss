@@ -44,13 +44,13 @@
 }
 
 .programm-section__content--slim::after {
-  background-image: url("../../img/programm-section/cat-slim.svg");
+  background-image: url("../img/programm-section/cat-slim.svg");
   background-size: 35px 49px;
   background-position: center top;
 }
 
 .programm-section__content--pro::after {
-  background-image: url("../../img/programm-section/cat-pro.svg");
+  background-image: url("../img/programm-section/cat-pro.svg");
   background-size: 67px 28px;
   background-position: center;
 }
@@ -92,11 +92,22 @@
     right: 0;
     width: 24px;
     height: 11px;
-    background-image: url("../../img/icons/arrow.svg");
-    background-size: contain;
+    background-image: url("../img/icons/arrow.svg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: all .1s linear;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.programm-section__to-catalog:hover::after {
+  right: -9px;
+  width: 33px;
+  background-image: url("../img/icon_arrow--long.svg");
 }
 
 @media (min-width: $tablet-width) {

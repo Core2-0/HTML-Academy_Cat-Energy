@@ -1,6 +1,7 @@
 .production {
   border-top: 1px solid $special_grey;
   border-bottom: 1px solid $special_grey;
+  padding-bottom: 25px;
 }
 
 .production__list {
@@ -12,13 +13,14 @@
 @media (min-width: $tablet-width) {
   .production {
     border: none;
+    padding-bottom: 43px;
   }
 
   .production__list {
     display: grid;
     grid-template-columns: repeat(2, 324px);
     column-gap: 60px;
-    row-gap: 60px;
+    row-gap: 54px;
     justify-content: center;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -26,6 +28,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .production {
+    padding-bottom: 55px;
+  }
   .production__list {
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;

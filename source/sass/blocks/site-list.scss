@@ -24,6 +24,17 @@
   text-decoration: none;
 }
 
+.site-list__link[href] {
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
@@ -31,7 +42,6 @@
     justify-content: flex-end;
     align-items: center;
     margin-left: auto;
-    width: 516px;
   }
 
   .site-list__item {
@@ -65,7 +75,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 600px;
+    width: 50%;
   }
 
   .site-list__item {

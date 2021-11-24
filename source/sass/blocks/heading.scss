@@ -53,7 +53,6 @@
     }
 
     &::after {
-      // left: #{"calc((50vw - var(--content-width-desktop) / 2) * -1)"};
       left: #{"calc((50vw - var(--content-width-desktop) / 2) * -1)"};
     }
   }

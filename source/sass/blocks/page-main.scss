@@ -22,6 +22,10 @@
     margin-top: 18px;
     margin-bottom: 40px;
     font-size: 60px;
+
+    &--form-page {
+      margin-left: 38px;
+    }
   }
 
   .page-main__subtitle {
@@ -36,6 +40,10 @@
 @media (min-width: $desktop-width) {
   .page-main__header {
     padding-top: 28px;
+  }
+
+  .page-main__title--form-page {
+    margin-left: 0;
   }
 
   .page-main__subtitle {

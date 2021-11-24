@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Cat Energy</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/152.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
 
   <!-- Pixel Glass -->
 <!-- <style>
@@ -13,20 +17,20 @@
     background-repeat: no-repeat;
     background-position:  50% 0;
     /* По умолчанию показывается мобильный макет */
-    background-image: url( "img/pixel-glass/Mobile.png" );
+    background-image: url( "../img/pixel-glass/Mobile-after.png" );
   }
   /* Планшет */
   @media ( min-width: 768px ) {
     HTML {
       /* Планшетный макет */
-      background-image: url( "img/pixel-glass/Tablet.png" );
+      background-image: url( "../img/pixel-glass/Tablet.png" );
     }
   }
   /* Десктоп */
   @media ( min-width: 1300px ) {
     HTML {
       /* Десктопный макет */
-      background-image: url( "img/pixel-glass/Desktop.png" );
+      background-image: url( "../img/pixel-glass/Desktop.png" );
     }
   }
 
@@ -34,7 +38,7 @@
     opacity: .5;
   }
 </style> -->
-<!-- // Pixel Glass -->
+<!-- Pixel Glass -->
 </head>
 
 <body class="page__body">
@@ -68,6 +72,10 @@
         <p class="preview__title">Функциональное питание для котов</p>
         <p class="preview__subtitle">Занялся собой? Займись котом!</p>
         <picture class="preview__picture">
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/promo/promo-product-desktop.webp 1x, img/promo/promo-product-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/promo/promo-product-tablet.webp 1x, img/promo/promo-product-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/promo/promo-product-mobile.webp 1x, img/promo/promo-product-mobile@2x.webp 2x">
+
           <source media="(min-width: 1300px)" srcset="img/promo/promo-product-desktop.png, img/promo/promo-product-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/promo/promo-product-tablet.jpg, img/promo/promo-product-tablet@2x.jpg 2x">
           <img class="preview__image" src="img/promo/promo-product-mobile.png" srcset="img/promo/promo-product-mobile@2x.png 2x" width="552" height="499" alt="">
@@ -137,16 +145,16 @@
         </div>
         <div class="stats__slider slider">
           <div class="slider__image-wrapper">
-            <div class="slider__image-before slider__image-before--active"></div>
+            <div class="slider__image-before"></div>
             <div class="slider__image-after"></div>
           </div>
           <div class="slider__controls">
-            <button class="slider__button slider__button--before" type="button">Было</button>
+            <button class="slider__button slider__button--before" type="button"><span>Было</span></button>
             <div class="slider__range">
               <input class="slider__range-input" type="range" min="0" max="100" value="50">
               <div class="slider__range-toggle"></div>
             </div>
-            <button class="slider__button slider__button--after" type="button">Стало</button>
+            <button class="slider__button slider__button--after" type="button"><span>Стало</span></button>
           </div>
         </div>
       </div>
@@ -162,45 +170,49 @@
           <span>Санкт-Петербург</span>
         </address>
       </div>
-      <div class="location__map"></div>
+      <div class="location__map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4387e1e3439a76347dcb749245c0358072bd40a5b1303ca1cd4c4c21fdecf2da&amp;source=constructor"></iframe>
+      </div>
     </section>
     <section class="page-footer__contacts contacts wrapper">
       <h2 class="visually-hidden">Контакты</h2>
       <a class="contacts__logo">
-        <img src="img/logo-name.svg" width="128" height="24" alt="Логотип магазина «Cat Energy»">
+        <svg width="128" height="24" role="img" aria-label="«Cat Energy»">
+          <use xlink:href="img/sprite.svg#logo-name"></use>
+        </svg>
       </a>
       <ul class="contacts__socials-list socials-list">
         <li class="socials-list__item">
-          <a href="https://www.vk.com" target="_blank" aria-label="vk">
-            <svg width="23" height="16">
-              <use xlink:href="img/icons/sprite.svg#icon_vk"></use>
+          <a class="socials-list__link" href="https://www.vk.com" target="_blank">
+            <svg class="socials-list__icon socials-list__icon--vk" width="24" height="13" role="img" aria-label="vkontakte" focusable="false">
+              <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
             </svg>
           </a>
         </li>
         <li class="socials-list__item">
-          <a href="https://www.instagram.com" target="_blank" aria-label="instagram">
-              <svg width="16" height="16">
-                <use xlink:href="img/icons/sprite.svg#icon_instagram"></use>
+          <a class="socials-list__link" href="https://www.instagram.com" target="_blank">
+              <svg class="socials-list__icon socials-list__icon--instagram" width="17" height="17" role="img" aria-label="instagram" focusable="false">
+                <use xlink:href="img/sprite.svg#icon_instagram"></use>
               </svg>
           </a>
         </li>
         <li class="socials-list__item">
-          <a href="https://www.facebook.com" target="_blank" aria-label="facebook">
-            <svg width="22" height="22">
-              <use xlink:href="img/icons/sprite.svg#icon_facebook"></use>
+          <a class="socials-list__link" href="https://www.facebook.com" target="_blank">
+            <svg class="socials-list__icon socials-list__icon--fb" width="13" height="20" role="img" aria-label="facebook" focusable="false">
+              <use xlink:href="img/sprite.svg#icon_facebook"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <a class="contacts__developers" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-        <svg width="27" height="34">
-          <use xlink:href="img/icons/sprite.svg#icon_html-academy"></use>
+      <a class="contacts__developers" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="contacts__developers-text">HTML Academy</span>
+        <svg class="contacts__developers-icon" width="27" height="34" role="img" aria-label="Логотип HTMLAcademy" focusable="false">
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
         </svg>
       </a>
     </section>
   </footer>
-  <script src="js/burger.js"></script>
-  <script src="js/slider.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
