@@ -93,10 +93,21 @@
     width: 24px;
     height: 11px;
     background-image: url("../img/icons/arrow.svg");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: all .1s linear;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.programm-section__to-catalog:hover::after {
+  right: -9px;
+  width: 33px;
+  background-image: url("../img/icon_arrow--long.svg");
 }
 
 @media (min-width: $tablet-width) {

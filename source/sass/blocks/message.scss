@@ -20,6 +20,14 @@
   width: 100%;
   min-height: 150px;
   resize: none;
+
+  &:hover {
+    outline: 1px solid $special_grey-2;
+  }
+
+  &:focus {
+    outline: 2px solid $special_dark-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {

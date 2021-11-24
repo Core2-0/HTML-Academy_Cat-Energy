@@ -34,6 +34,15 @@
     width: 13px;
     height: auto;
   }
+
+  &:focus,
+  &:hover {
+    fill: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $mobile-width-only) {

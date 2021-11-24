@@ -78,15 +78,15 @@
             <ul class="form-request__list">
               <li class="form-request__item">
                 <label class="form-request__label" for="name-name">Имя:*</label>
-                <input id="name-name" type="text" name="name" placeholder="Барсик">
+                <input id="name-name" type="text" name="name" placeholder="Барсик" required>
               </li>
               <li class="form-request__item">
                 <label class="form-request__label" for="weight-weight">Вес (кг):*</label>
-                <input id="weight-weight" type="number" name="weight" value="7">
+                <input id="weight-weight" type="number" name="weight" placeholder="7" required>
               </li>
               <li class="form-request__item">
                 <label class="form-request__label" for="old-old">Возраст (лет):</label>
-                <input id="old-old" type="number" name="old" value="7">
+                <input id="old-old" type="number" name="old" placeholder="7">
               </li>
             </ul>
           </fieldset>
@@ -112,16 +112,16 @@
             <ul class="form-request__list">
               <li class="form-request__item">
                 <label class="form-request__label" for="email-email">E-mail:*</label>
-                <input id="email-email" type="email" placeholder="kuklachev@gmail.com">
+                <input id="email-email" type="email" placeholder="kuklachev@gmail.com" required>
                 <svg class="form-request__contacts-icon form-request__contacts-icon--email" width="19" height="14" role="img" aria-label="Почта" focusable="false">
-                  <use xlink:href="img/icons/sprite.svg#icon_email"></use>
+                  <use xlink:href="img/sprite.svg#icon_email"></use>
                 </svg>
               </li>
               <li class="form-request__item">
                 <label class="form-request__label" for="tel-tel">Телефон:*</label>
-                <input id="tel-tel" type="tel" placeholder="8 (960) 900-60-90">
-                <svg class="form-request__contacts-icon form-request__contacts-icon--phone" width="20" height="21" role="img" aria-label="Телефон" focusable="false">
-                  <use xlink:href="img/icons/sprite.svg#icon_phone"></use>
+                <input id="tel-tel" type="tel" placeholder="8 (960) 900-60-90" required>
+                <svg class="form-request__contacts-icon form-request__contacts-icon--phone" width="20" height="20" role="img" aria-label="Телефон" focusable="false">
+                  <use xlink:href="img/sprite.svg#icon_phone"></use>
                 </svg>
               </li>
             </ul>
@@ -136,19 +136,19 @@
             <legend class="form-request__legend heading">Дополнительно</legend>
             <ul class="form-request__list">
               <li class="form-request__item">
-                <input class="visually-hidden" id="filter-sweetener" type="checkbox" name="sweetener" checked>
+                <input class="visually-hidden" id="filter-sweetener" type="checkbox" name="filter-additionally" value="sweetener" checked>
                 <label class="form-request__label form-request__label-checkbox" for="filter-sweetener">Сахарозаменитель</label>
               </li>
               <li class="form-request__item">
-                <input class="visually-hidden" id="filter-water" type="checkbox" name="water">
+                <input class="visually-hidden" id="filter-water" type="checkbox" name="filter-additionally" value="water">
                 <label class="form-request__label form-request__label-checkbox" for="filter-water">Питьевая вода</label>
               </li>
               <li class="form-request__item">
-                <input class="visually-hidden" id="filter-milk" type="checkbox" name="milk">
+                <input class="visually-hidden" id="filter-milk" type="checkbox" name="filter-additionally" value="milk">
                 <label class="form-request__label form-request__label-checkbox" for="filter-milk">Молоко</label>
               </li>
               <li class="form-request__item">
-                <input class="visually-hidden" id="filter-vitamins" type="checkbox" name="vitamins">
+                <input class="visually-hidden" id="filter-vitamins" type="checkbox" name="filter-additionally" value="vitamins">
                 <label class="form-request__label form-request__label-checkbox" for="filter-vitamins">Витамины</label>
               </li>
             </ul>

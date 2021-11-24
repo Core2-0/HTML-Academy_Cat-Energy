@@ -52,7 +52,6 @@
   position: absolute;
   right: 20px;
   fill: $special-black-2;
-  transition: all 0.3s ease-out;
 
   &--email {
     width: 18px;
@@ -86,6 +85,7 @@
   --radio-inner-diameter: 13px;
   min-height: var(--radio-outer-diameter);
   width: 100%;
+  cursor: pointer;
 
   &::before,
   &::after {
@@ -102,8 +102,14 @@
     left: 0;
     width: var(--radio-outer-diameter);
     height: var(--radio-outer-diameter);
-    border: 1px solid $border;
+    border: 1px solid $special_grey-2;
     background-color: transparent;
+  }
+
+  &:hover {
+    &::before{
+      border: 1px solid $special_grey-5;
+    }
   }
 }
 
@@ -121,6 +127,7 @@
   --checkbox-tick-height: 8px;
   min-height: var(--checkbox-height);
   width: 100%;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -131,8 +138,15 @@
     transform: translateY(-50%);
     width: var(--checkbox-width);
     height: var(--checkbox-height);
-    border: 1px solid #cdcdcd;
+    border: 1px solid $special_grey-4;
     background-color: $basic_white;
+  }
+
+  &:focus,
+  &:hover {
+    &::before {
+      border: 1px solid $special_grey-5;
+    }
   }
 }
 
@@ -148,6 +162,11 @@
   border-bottom: 2px solid #68b738;
 }
 
+.form-request__item input[type="checkbox"]:disabled + .form-request__label-checkbox,
+.form-request__item input[type="radio"]:disabled + .form-request__label-radio {
+  opacity: 0.3;
+}
+
 .form-request input:not([type="radio"]):not([type="checkbox"]) {
   flex-grow: 1;
   box-sizing: border-box;
@@ -160,6 +179,26 @@
   color: $special_dark-grey;
   text-transform: uppercase;
   outline: 0;
+
+  &:hover {
+    outline: 1px solid $special_grey-2;
+  }
+
+  &:focus {
+    outline: 2px solid $special_dark-grey;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid $status_error;
+  }
+}
+
+.form-request input:focus+.form-request__contacts-icon {
+  fill: $basic_green;
+}
+
+.form-request input:focus:invalid+.form-request__contacts-icon {
+  fill: $status_error;
 }
 
 .form-request__button {

@@ -5,6 +5,17 @@
   margin: 0;
 }
 
+.main-nav__logo[href] {
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .main-nav__toggle-menu {
   position: absolute;
   top: 0;

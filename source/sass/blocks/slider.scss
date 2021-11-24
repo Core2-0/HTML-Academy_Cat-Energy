@@ -116,10 +116,21 @@
     margin: 30px auto 0;
   }
 
-  .slider__button {
+  .slider__button span {
     font-size: 20px;
     line-height: 20px;
+    cursor: pointer;
+    position: relative;
     border-bottom: 1px dotted $basic_black;
+
+    &:focus,
+    &:hover {
+      border-bottom: 1px solid rgba($color: $basic_black, $alpha: 0.4);
+    }
+
+    &:active {
+      border-bottom: 0;
+    }
   }
 
   .slider__range {
@@ -144,20 +155,43 @@
       appearance: none;
       background-color: $basic_green;
       border: 12px solid $basic_white;
-      width: 34px;
-      height: 34px;
-      box-shadow: 1px 1px 0 $special_grey-2;
+      width: 32px;
+      height: 32px;
+      box-shadow: 0 0 0 1px $special_grey-2;
+      filter: drop-shadow(0px 1px 3px rgba($color: $basic_black, $alpha: 0.16));
       border-radius: 50%;
+      transition: all 0.3s ease-out;
+
+      &:focus,
+      &:hover {
+        filter: drop-shadow(0px 2px 4px rgba($color: $basic_black, $alpha: 0.19));
+      }
+
+      &:active {
+        box-shadow: 0 0 0 1px $basic_green;
+        filter: drop-shadow(0px 3px 5px rgba($color: $basic_black, $alpha: 0.2));
+      }
     }
 
     &::-moz-range-thumb {
       appearance: none;
       background-color: $basic_green;
-      border: 18px solid $basic_white;
+      border: 12px solid $basic_white;
       width: 8px;
       height: 8px;
-      box-shadow: 1px 1px 0 $special_grey-2;
+      box-shadow: 0 0 0 1px $special_grey-2;
+      filter: drop-shadow(0px 1px 3px rgba($color: $basic_black, $alpha: 0.16));
       border-radius: 50%;
+
+      &:focus,
+      &:hover {
+        filter: drop-shadow(0px 2px 4px rgba($color: $basic_black, $alpha: 0.19));
+      }
+
+      &:active {
+        box-shadow: 0 0 0 1px $basic_green;
+        filter: drop-shadow(0px 3px 5px rgba($color: $basic_black, $alpha: 0.2));
+      }
     }
   }
 

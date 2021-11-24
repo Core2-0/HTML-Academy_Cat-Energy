@@ -5,20 +5,44 @@
   margin-bottom: 32px;
 }
 
+.contacts__logo[href] {
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .contacts__developers {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: $font-family-second;
-  color: $special_dark-grey;
+  color: $special_grey-3;
   font-size: 16px;
   text-decoration: none;
   width: 100%;
   padding: 22px 0;
+
+  &:focus,
+  &:hover {
+    color: $basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.contacts__developers svg {
-  fill: $special_grey-3;
+.contacts__developers-text {
+  color: $special_dark-grey;
+}
+
+.contacts__developers-icon {
+  fill: currentColor;
 }
 
 @media (min-width: $tablet-width) {

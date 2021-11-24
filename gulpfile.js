@@ -94,7 +94,7 @@ const sprite = () => {
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img/icons"));
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.sprite = sprite;
