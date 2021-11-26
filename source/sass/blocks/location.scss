@@ -40,12 +40,6 @@
   }
 }
 
-.location__map iframe {
-  width: inherit;
-  height: inherit;
-  border: 0;
-}
-
 @media (min-width: $tablet-width) {
   .location__wrapper {
     padding: 66px 72px 51px;
