@@ -58,13 +58,12 @@
     .features__item--step-#{$i}::after {
       content: "";
       position: absolute;
-      top: -38px;
-      right: 0;
-      width: 136px;
-      height: 280px;
+      top: -7px;
+      right: 12px;
+      min-width: 112px;
+      min-height: 280px;
       background-image: url("../img/features/bg-step-#{$i}.svg");
-      background-position-x: right;
-      background-size: contain;
+      background-position: 0 0;
       background-repeat: no-repeat;
       z-index: -1;
     }

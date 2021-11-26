@@ -1,3 +1,5 @@
+// Slider
+
 /*! matchMedia() polyfill - Test a CSS media type/query in JS. Authors & copyright (c) 2012: Scott Jehl, Paul Irish, Nicholas Zakas, David Knight. MIT license. https://github.com/paulirish/matchMedia.js/ */
 
 window.matchMedia || (window.matchMedia = function() {
@@ -49,10 +51,9 @@ window.matchMedia || (window.matchMedia = function() {
   };
 }());
 
-const mobileWidth = window.matchMedia('(max-width: 767px');
-const tabletWidth = window.matchMedia('(min-width: 768px)');
+const mobileWidth = window.matchMedia('screen and (max-width: 767px)');
+const tabletWidth = window.matchMedia('screen and (min-width: 768px)');
 
-// Slider
 const progress = document.querySelector('.slider');
 const imageAfter = progress.querySelector('.slider__image-after');
 const imageBefore = progress.querySelector('.slider__image-before');
