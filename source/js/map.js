@@ -1,35 +1,64 @@
-ymaps.ready(function () {
-  var myMap = new ymaps.Map('map', { // 'map' это твой id в разметке, куда ты хочешь засунуть карту
-    center: [59.938635, 30.323118],
-    zoom: 17
-  }, {
-    // autoFitToViewport: 'always',
-    searchControlProvider: 'yandex#search',
-  }),
+const map = L.map('map');
 
-    // Создаём макет содержимого.
-    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-    ),
+if (document.body.clientWidth < 1300) {
+  map.setView({
+    lat: 59.938631,
+    lng: 30.323055,
+  }, 17);
 
-    myPlacemarkWithContent = new ymaps.Placemark([59.938635, 30.323118], {
-      hintContent: 'Адрес офиса компании «Cat Energy»',
-    }, {
-      // Опции.
-      // Необходимо указать данный тип макета.
-      iconLayout: 'default#imageWithContent',
-      // Своё изображение иконки метки.
-      iconImageHref: '../img/location/map_pin.png', // здесь мы указываем путь до нашей картинки пина (метки)
-      // Размеры метки.
-      iconImageSize: [57, 53], // здесь уже все просто и понятно , если переводить с английского названия свойств
-      // Смещение левого верхнего угла иконки относительно
-      // её "ножки" (точки привязки).
-      iconImageOffset: [-27, -48],
-      // Смещение слоя с содержимым относительно слоя с картинкой.
-      iconContentOffset: [15, 15],
-      // Макет содержимого.
-      iconContentLayout: MyIconContentLayout
-    });
+  L.tileLayer(
+    'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    },
+  ).addTo(map);
 
-  myMap.geoObjects.add(myPlacemarkWithContent);
-});
+  const mainPinIcon = L.icon({
+    iconUrl: '../img/location/map_pin.png',
+    iconSize: [57, 53],
+    iconAnchor: [28, 53],
+  });
+
+  const mainPinMarker = L.marker(
+    {
+      lat: 59.938631,
+      lng: 30.323055,
+    },
+    {
+      icon: mainPinIcon,
+    }
+  );
+
+  mainPinMarker.addTo(map);
+} else if (document.body.clientWidth >= 1300) {
+
+  map.setView({
+    lat: 59.938963,
+    lng: 30.319293,
+  }, 17);
+
+  L.tileLayer(
+    'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    },
+  ).addTo(map);
+
+  const mainPinIcon = L.icon({
+    iconUrl: '../img/location/map_pin.png',
+    iconSize: [124, 106],
+    iconAnchor: [62, 106],
+  });
+
+  const mainPinMarker = L.marker(
+    {
+      lat: 59.938631,
+      lng: 30.323055,
+    },
+    {
+      icon: mainPinIcon,
+    }
+  );
+
+  mainPinMarker.addTo(map);
+}
