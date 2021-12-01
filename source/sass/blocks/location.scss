@@ -3,6 +3,7 @@
   padding-top: 28px;
   padding-bottom: 26px;
   background-color: $basic_white;
+  z-index: 20;
 }
 
 .location__slogan {
@@ -33,6 +34,7 @@
   background-size: cover;
   background-position-y: 50%;
   background-repeat: no-repeat;
+  z-index: 0;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/location/map-mobile@2x.png");
