@@ -14,7 +14,7 @@ if (document.body.clientWidth < 1300) {
   ).addTo(map);
 
   const mainPinIcon = L.icon({
-    iconUrl: '../img/location/map_pin.png',
+    iconUrl: 'img/location/map_pin.png',
     iconSize: [57, 53],
     iconAnchor: [28, 53],
   });
@@ -45,7 +45,7 @@ if (document.body.clientWidth < 1300) {
   ).addTo(map);
 
   const mainPinIcon = L.icon({
-    iconUrl: '../img/location/map_pin.png',
+    iconUrl: 'img/location/map_pin.png',
     iconSize: [124, 106],
     iconAnchor: [62, 106],
   });
