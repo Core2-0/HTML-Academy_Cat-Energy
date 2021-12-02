@@ -5,16 +5,9 @@
   border-bottom: 1px solid $border;
   width: 100%;
   box-sizing: border-box;
-  // display: grid;
-  // grid-template-columns: repeat(3, 30px);
-  // justify-content: center;
-  // align-items: end;
-  // justify-items: center;
-  // column-gap: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .socials-list__icon {

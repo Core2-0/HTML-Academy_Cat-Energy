@@ -107,7 +107,7 @@
   }
 
   &:hover {
-    &::before{
+    &::before {
       border: 1px solid $special_grey-5;
     }
   }
@@ -193,11 +193,11 @@
   }
 }
 
-.form-request input:focus+.form-request__contacts-icon {
+.form-request input:focus + .form-request__contacts-icon {
   fill: $basic_green;
 }
 
-.form-request input:focus:invalid+.form-request__contacts-icon {
+.form-request input:focus:invalid + .form-request__contacts-icon {
   fill: $status_error;
 }
 
