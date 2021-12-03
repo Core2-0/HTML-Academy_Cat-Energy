@@ -4,45 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Cat Energy: Подбор программы</title>
+
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/152.png">
     <link rel="manifest" href="manifest.webmanifest">
+
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+
+    <meta name="description" content="Подбор программы функционального питания для котов «Cat Energy»">
+
     <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="js/burger.min.js" as="script">
 
-    <!-- Pixel Glass -->
-<!-- <style>
-  HTML {
-    background-repeat: no-repeat;
-    background-position:  50% 0;
-    /* По умолчанию показывается мобильный макет */
-    background-image: url( "../img/pixel-glass/Mobile_form.png" );
-  }
-  /* Планшет */
-  @media ( min-width: 768px ) {
-    HTML {
-      /* Планшетный макет */
-      background-image: url( "../img/pixel-glass/Tablet_form.png" );
-    }
-  }
-  /* Десктоп */
-  @media ( min-width: 1300px ) {
-    HTML {
-      /* Десктопный макет */
-      background-image: url( "../img/pixel-glass/Desktop_form.png" );
-    }
-  }
-
-  BODY {
-    opacity: .5;
-  }
-</style> -->
-<!-- Pixel Glass -->
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -173,7 +151,7 @@
             <span>Санкт-Петербург</span>
           </address>
         </div>
-        <div id="map" class="location__map"></div>
+        <div id="map" class="location__map" style="width: 100%;"></div>
       </section>
       <section class="page-footer__contacts contacts wrapper">
         <h2 class="visually-hidden">Контакты</h2>
@@ -213,8 +191,8 @@
         </a>
       </section>
     </footer>
-    <script src="js/burger.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="js/map.min.js"></script>
+    <script src="js/burger.min.js"></script>
   </body>
 </html>
