@@ -153,6 +153,11 @@
     margin-bottom: 33px;
   }
 
+  .card-product__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .card-product__show-more {
     width: 60px;
     height: 60px;

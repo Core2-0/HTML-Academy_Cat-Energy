@@ -8,7 +8,10 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/152.png">
     <link rel="manifest" href="manifest.webmanifest">
+
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+
     <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
@@ -95,12 +98,18 @@
                   <a class="card-product__link" href="#">Cat Energy PRO 500 г</a>
                 </h3>
                 <dl class="card-product__specification-list">
-                  <dt>Масса</dt>
-                  <dd>500 г</dd>
-                  <dt>Вкус</dt>
-                  <dd>Курица</dd>
-                  <dt>Цена</dt>
-                  <dd>700 Р.</dd>
+                  <div class="card-product__item">
+                    <dt>Масса</dt>
+                    <dd>500 г</dd>
+                  </div>
+                  <div class="card-product__item">
+                    <dt>Вкус</dt>
+                    <dd>Курица</dd>
+                  </div>
+                  <div class="card-product__item">
+                    <dt>Цена</dt>
+                    <dd>700 Р.</dd>
+                  </div>
                 </dl>
               </div>
               <a class="card-product__button button button--green" href="#">Заказать</a>
@@ -367,7 +376,7 @@
             <span>Санкт-Петербург</span>
           </address>
         </div>
-        <div id="map" class="location__map"></div>
+        <div id="map" class="location__map" style="width: 100%;"></div>
       </section>
       <section class="page-footer__contacts contacts wrapper">
         <h2 class="visually-hidden">Контакты</h2>
@@ -408,7 +417,7 @@
       </section>
     </footer>
     <script src="js/burger.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="js/map.min.js"></script>
   </body>
 </html>
