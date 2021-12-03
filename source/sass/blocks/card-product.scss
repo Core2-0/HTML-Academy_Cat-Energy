@@ -21,13 +21,18 @@
 
 .card-product__specification-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(3, min-content);
   margin: 0;
   padding: 0;
   font-size: 12px;
   font-family: $font-family-second;
   line-height: 16px;
+}
+
+.card-product__item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-product__title {
@@ -149,8 +154,13 @@
   .card-product__specification-list {
     width: 100%;
     font-size: 16px;
-    row-gap: 18px;
+    row-gap: 9px;
     margin-bottom: 33px;
+  }
+
+  .card-product__item {
+    border-bottom: 1px solid $special_grey-2;
+    padding-bottom: 9px;
   }
 
   .card-product__show-more {
